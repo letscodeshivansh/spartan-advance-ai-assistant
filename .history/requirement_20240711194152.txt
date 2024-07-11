@@ -1,0 +1,11 @@
+pyttsx3 
+speech_recognition
+webbrowser
+wikipedia
+pywhatkit
+pyautogui
+threading
+requests
+pynput 
+datetime
+warnings

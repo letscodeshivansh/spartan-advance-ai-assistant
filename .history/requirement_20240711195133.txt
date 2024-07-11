@@ -1,0 +1,9 @@
+beautifulsoup4
+pandas
+pyaudio
+pyttsx3
+pynput
+pywhatkit
+requests
+speechrecognition
+wikipedia==1.4.0

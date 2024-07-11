@@ -1,0 +1,5 @@
+pyttsx3 
+speech_recognition
+     webbrowser
+     wikipedia
+     pywhatkit

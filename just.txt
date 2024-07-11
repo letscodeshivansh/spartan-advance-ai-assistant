@@ -1,0 +1,16 @@
+elif "youtube" in query:
+                    engine.say("opening, youtube")
+                    engine.runAndWait()
+                    wb.open("www.youtube.com")
+                elif "facebook" in query:
+                    engine.say("opening, facebook")
+                    engine.runAndWait()
+                    wb.open("www.facebook.com")
+                elif "instagram" in query:
+                    engine.say("opening, instagram")
+                    engine.runAndWait()
+                    wb.open("www.instagram.com")
+                elif "netflix" in query:
+                    engine.say("opening, netflix")
+                    engine.runAndWait()
+                    wb.open("www.netflix.com")

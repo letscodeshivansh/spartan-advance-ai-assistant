@@ -1,0 +1,1411 @@
+[
+    {
+        "label": "pyttsx3",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pyttsx3",
+        "description": "pyttsx3",
+        "detail": "pyttsx3",
+        "documentation": {}
+    },
+    {
+        "label": "speech_recognition",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "speech_recognition",
+        "description": "speech_recognition",
+        "detail": "speech_recognition",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "warnings",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "warnings",
+        "description": "warnings",
+        "detail": "warnings",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "pyautogui",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pyautogui",
+        "description": "pyautogui",
+        "detail": "pyautogui",
+        "documentation": {}
+    },
+    {
+        "label": "webbrowser",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "webbrowser",
+        "description": "webbrowser",
+        "detail": "webbrowser",
+        "documentation": {}
+    },
+    {
+        "label": "threading",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "threading",
+        "description": "threading",
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "search",
+        "description": "search",
+        "isExtraImport": true,
+        "detail": "search",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "search",
+        "description": "search",
+        "isExtraImport": true,
+        "detail": "search",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "search",
+        "description": "search",
+        "isExtraImport": true,
+        "detail": "search",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "search",
+        "description": "search",
+        "isExtraImport": true,
+        "detail": "search",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "openings",
+        "description": "openings",
+        "isExtraImport": true,
+        "detail": "openings",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "openings",
+        "description": "openings",
+        "isExtraImport": true,
+        "detail": "openings",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "openings",
+        "description": "openings",
+        "isExtraImport": true,
+        "detail": "openings",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "openings",
+        "description": "openings",
+        "isExtraImport": true,
+        "detail": "openings",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "alarm",
+        "description": "alarm",
+        "isExtraImport": true,
+        "detail": "alarm",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "alarm",
+        "description": "alarm",
+        "isExtraImport": true,
+        "detail": "alarm",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "alarm",
+        "description": "alarm",
+        "isExtraImport": true,
+        "detail": "alarm",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "alarm",
+        "description": "alarm",
+        "isExtraImport": true,
+        "detail": "alarm",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "volume_settings",
+        "description": "volume_settings",
+        "isExtraImport": true,
+        "detail": "volume_settings",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "volume_settings",
+        "description": "volume_settings",
+        "isExtraImport": true,
+        "detail": "volume_settings",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "volume_settings",
+        "description": "volume_settings",
+        "isExtraImport": true,
+        "detail": "volume_settings",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "volume_settings",
+        "description": "volume_settings",
+        "isExtraImport": true,
+        "detail": "volume_settings",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "news",
+        "description": "news",
+        "isExtraImport": true,
+        "detail": "news",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "news",
+        "description": "news",
+        "isExtraImport": true,
+        "detail": "news",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "news",
+        "description": "news",
+        "isExtraImport": true,
+        "detail": "news",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "news",
+        "description": "news",
+        "isExtraImport": true,
+        "detail": "news",
+        "documentation": {}
+    },
+    {
+        "label": "glob",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "glob",
+        "description": "glob",
+        "detail": "glob",
+        "documentation": {}
+    },
+    {
+        "label": "shutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shutil",
+        "description": "shutil",
+        "detail": "shutil",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "sysconfig",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sysconfig",
+        "description": "sysconfig",
+        "detail": "sysconfig",
+        "documentation": {}
+    },
+    {
+        "label": "tempfile",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tempfile",
+        "description": "tempfile",
+        "detail": "tempfile",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "subprocess",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "detail": "subprocess",
+        "documentation": {}
+    },
+    {
+        "label": "runpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "runpy",
+        "description": "runpy",
+        "detail": "runpy",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "sleep",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "pywhatkit",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pywhatkit",
+        "description": "pywhatkit",
+        "detail": "pywhatkit",
+        "documentation": {}
+    },
+    {
+        "label": "wikipedia",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "wikipedia",
+        "description": "wikipedia",
+        "detail": "wikipedia",
+        "documentation": {}
+    },
+    {
+        "label": "Key",
+        "importPath": "pynput.keyboard",
+        "description": "pynput.keyboard",
+        "isExtraImport": true,
+        "detail": "pynput.keyboard",
+        "documentation": {}
+    },
+    {
+        "label": "Controller",
+        "importPath": "pynput.keyboard",
+        "description": "pynput.keyboard",
+        "isExtraImport": true,
+        "detail": "pynput.keyboard",
+        "documentation": {}
+    },
+    {
+        "label": "speak",
+        "kind": 2,
+        "importPath": ".history.news_20240711012035",
+        "description": ".history.news_20240711012035",
+        "peekOfCode": "def speak(audio):\n    engine.say(audio)\n    engine.runAndWait()\ndef takecommand():\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2                                                         # time for it to pause and litsen to us\n        speech.energy_threshold=250                                                  # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)                                                  # time for which it will listen to us and the resets after the time(in secs)",
+        "detail": ".history.news_20240711012035",
+        "documentation": {}
+    },
+    {
+        "label": "takecommand",
+        "kind": 2,
+        "importPath": ".history.news_20240711012035",
+        "description": ".history.news_20240711012035",
+        "peekOfCode": "def takecommand():\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2                                                         # time for it to pause and litsen to us\n        speech.energy_threshold=250                                                  # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)                                                  # time for which it will listen to us and the resets after the time(in secs)\n        try:                                                                             # exception handling\n            print(\"Recognising and Understanding...\")\n            query=speech.recognize_google(audio,language='en-in')  ",
+        "detail": ".history.news_20240711012035",
+        "documentation": {}
+    },
+    {
+        "label": "get_news",
+        "kind": 2,
+        "importPath": ".history.news_20240711012035",
+        "description": ".history.news_20240711012035",
+        "peekOfCode": "def get_news():\n    url = 'https://news.google.com/rss'\n    response = requests.get(url)\n    try:\n        soup = BeautifulSoup(response.content, 'lxml')\n    except Exception:\n        warnings.filterwarnings(\"ignore\", category=UserWarning, message=\".*looks like you're parsing an XML document using an HTML parser.*\")\n        soup = BeautifulSoup(response.content, 'html.parser')    \n    headlines = soup.find_all('item', limit=5)\n    news_list = []",
+        "detail": ".history.news_20240711012035",
+        "documentation": {}
+    },
+    {
+        "label": "read_news",
+        "kind": 2,
+        "importPath": ".history.news_20240711012035",
+        "description": ".history.news_20240711012035",
+        "peekOfCode": "def read_news():\n    news_list = get_news()\n    engine.say(\"Here are the top news headlines\")\n    engine.runAndWait()\n    for news in news_list:\n        print(news)\n        speak(news)",
+        "detail": ".history.news_20240711012035",
+        "documentation": {}
+    },
+    {
+        "label": "speak",
+        "kind": 2,
+        "importPath": ".history.news_20240711012829",
+        "description": ".history.news_20240711012829",
+        "peekOfCode": "def speak(audio):\n    engine.say(audio)\n    engine.runAndWait()\ndef takecommand():\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2                                                         # time for it to pause and litsen to us\n        speech.energy_threshold=250                                                  # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)                                                  # time for which it will listen to us and the resets after the time(in secs)",
+        "detail": ".history.news_20240711012829",
+        "documentation": {}
+    },
+    {
+        "label": "takecommand",
+        "kind": 2,
+        "importPath": ".history.news_20240711012829",
+        "description": ".history.news_20240711012829",
+        "peekOfCode": "def takecommand():\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2                                                         # time for it to pause and litsen to us\n        speech.energy_threshold=250                                                  # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)                                                  # time for which it will listen to us and the resets after the time(in secs)\n        try:                                                                             # exception handling\n            print(\"Recognising and Understanding...\")\n            query=speech.recognize_google(audio,language='en-in')  ",
+        "detail": ".history.news_20240711012829",
+        "documentation": {}
+    },
+    {
+        "label": "get_news",
+        "kind": 2,
+        "importPath": ".history.news_20240711012829",
+        "description": ".history.news_20240711012829",
+        "peekOfCode": "def get_news():\n    url = 'https://news.google.com/rss'\n    response = requests.get(url)\n    try:\n        soup = BeautifulSoup(response.content, 'lxml')\n    except Exception:\n        warnings.filterwarnings(\"ignore\", category=UserWarning, message=\".*looks like you're parsing an XML document using an HTML parser.*\")\n        soup = BeautifulSoup(response.content, 'html.parser')    \n    headlines = soup.find_all('item', limit=5)\n    news_list = []",
+        "detail": ".history.news_20240711012829",
+        "documentation": {}
+    },
+    {
+        "label": "read_news",
+        "kind": 2,
+        "importPath": ".history.news_20240711012829",
+        "description": ".history.news_20240711012829",
+        "peekOfCode": "def read_news():\n    news_list = get_news()\n    engine.say(\"Here are the top news headlines\")\n    engine.runAndWait()\n    for news in news_list:\n        print(news)\n        speak(news)",
+        "detail": ".history.news_20240711012829",
+        "documentation": {}
+    },
+    {
+        "label": "speak",
+        "kind": 2,
+        "importPath": ".history.news_20240711012831",
+        "description": ".history.news_20240711012831",
+        "peekOfCode": "def speak(audio):\n    engine.say(audio)\n    engine.runAndWait()\ndef takecommand():\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2                                                         # time for it to pause and litsen to us\n        speech.energy_threshold=250                                                  # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)                                                  # time for which it will listen to us and the resets after the time(in secs)",
+        "detail": ".history.news_20240711012831",
+        "documentation": {}
+    },
+    {
+        "label": "takecommand",
+        "kind": 2,
+        "importPath": ".history.news_20240711012831",
+        "description": ".history.news_20240711012831",
+        "peekOfCode": "def takecommand():\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2                                                         # time for it to pause and litsen to us\n        speech.energy_threshold=250                                                  # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)                                                  # time for which it will listen to us and the resets after the time(in secs)\n        try:                                                                             # exception handling\n            print(\"Recognising and Understanding...\")\n            query=speech.recognize_google(audio,language='en-in')  ",
+        "detail": ".history.news_20240711012831",
+        "documentation": {}
+    },
+    {
+        "label": "get_news",
+        "kind": 2,
+        "importPath": ".history.news_20240711012831",
+        "description": ".history.news_20240711012831",
+        "peekOfCode": "def get_news():\n    url = 'https://news.google.com/rss'\n    response = requests.get(url)\n    try:\n        soup = BeautifulSoup(response.content, 'lxml')\n    except Exception:\n        warnings.filterwarnings(\"ignore\", category=UserWarning, message=\".*looks like you're parsing an XML document using an HTML parser.*\")\n        soup = BeautifulSoup(response.content, 'html.parser')    \n    headlines = soup.find_all('item', limit=5)\n    news_list = []",
+        "detail": ".history.news_20240711012831",
+        "documentation": {}
+    },
+    {
+        "label": "read_news",
+        "kind": 2,
+        "importPath": ".history.news_20240711012831",
+        "description": ".history.news_20240711012831",
+        "peekOfCode": "def read_news():\n    news_list = get_news()\n    engine.say(\"Here are the top news headlines\")\n    engine.runAndWait()\n    for news in news_list:\n        print(news)\n        speak(news)",
+        "detail": ".history.news_20240711012831",
+        "documentation": {}
+    },
+    {
+        "label": "speak",
+        "kind": 2,
+        "importPath": ".history.news_20240711012833",
+        "description": ".history.news_20240711012833",
+        "peekOfCode": "def speak(audio):\n    engine.say(audio)\n    engine.runAndWait()\ndef takecommand():\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2                                                         # time for it to pause and litsen to us\n        speech.energy_threshold=250                                                  # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)                                                  # time for which it will listen to us and the resets after the time(in secs)",
+        "detail": ".history.news_20240711012833",
+        "documentation": {}
+    },
+    {
+        "label": "takecommand",
+        "kind": 2,
+        "importPath": ".history.news_20240711012833",
+        "description": ".history.news_20240711012833",
+        "peekOfCode": "def takecommand():\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2                                                         # time for it to pause and litsen to us\n        speech.energy_threshold=250                                                  # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)                                                  # time for which it will listen to us and the resets after the time(in secs)\n        try:                                                                             # exception handling\n            print(\"Recognising and Understanding...\")\n            query=speech.recognize_google(audio,language='en-in')  ",
+        "detail": ".history.news_20240711012833",
+        "documentation": {}
+    },
+    {
+        "label": "get_news",
+        "kind": 2,
+        "importPath": ".history.news_20240711012833",
+        "description": ".history.news_20240711012833",
+        "peekOfCode": "def get_news():\n    url = 'https://news.google.com/rss'\n    response = requests.get(url)\n    try:\n        soup = BeautifulSoup(response.content, 'lxml')\n    except Exception:\n        warnings.filterwarnings(\"ignore\", category=UserWarning, message=\".*looks like you're parsing an XML document using an HTML parser.*\")\n        soup = BeautifulSoup(response.content, 'html.parser')    \n    headlines = soup.find_all('item', limit=5)\n    news_list = []",
+        "detail": ".history.news_20240711012833",
+        "documentation": {}
+    },
+    {
+        "label": "read_news",
+        "kind": 2,
+        "importPath": ".history.news_20240711012833",
+        "description": ".history.news_20240711012833",
+        "peekOfCode": "def read_news():\n    news_list = get_news()\n    engine.say(\"Here are the top news headlines\")\n    engine.runAndWait()\n    for news in news_list:\n        print(news)\n        speak(news)",
+        "detail": ".history.news_20240711012833",
+        "documentation": {}
+    },
+    {
+        "label": "speak",
+        "kind": 2,
+        "importPath": ".history.news_20240711012835",
+        "description": ".history.news_20240711012835",
+        "peekOfCode": "def speak(audio):\n    engine.say(audio)\n    engine.runAndWait()\ndef takecommand():\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2                                                         # time for it to pause and litsen to us\n        speech.energy_threshold=250                                                  # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)                                                  # time for which it will listen to us and the resets after the time(in secs)",
+        "detail": ".history.news_20240711012835",
+        "documentation": {}
+    },
+    {
+        "label": "takecommand",
+        "kind": 2,
+        "importPath": ".history.news_20240711012835",
+        "description": ".history.news_20240711012835",
+        "peekOfCode": "def takecommand():\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2                                                         # time for it to pause and litsen to us\n        speech.energy_threshold=250                                                  # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)                                                  # time for which it will listen to us and the resets after the time(in secs)\n        try:                                                                             # exception handling\n            print(\"Recognising and Understanding...\")\n            query=speech.recognize_google(audio,language='en-in')  ",
+        "detail": ".history.news_20240711012835",
+        "documentation": {}
+    },
+    {
+        "label": "get_news",
+        "kind": 2,
+        "importPath": ".history.news_20240711012835",
+        "description": ".history.news_20240711012835",
+        "peekOfCode": "def get_news():\n    url = 'https://news.google.com/rss'\n    response = requests.get(url)\n    try:\n        soup = BeautifulSoup(response.content, 'lxml')\n    except Exception:\n        warnings.filterwarnings(\"ignore\", category=UserWarning, message=\".*looks like you're parsing an XML document using an HTML parser.*\")\n        soup = BeautifulSoup(response.content, 'html.parser')    \n    headlines = soup.find_all('item', limit=5)\n    news_list = []",
+        "detail": ".history.news_20240711012835",
+        "documentation": {}
+    },
+    {
+        "label": "read_news",
+        "kind": 2,
+        "importPath": ".history.news_20240711012835",
+        "description": ".history.news_20240711012835",
+        "peekOfCode": "def read_news():\n    news_list = get_news()\n    engine.say(\"Here are the top news headlines\")\n    engine.runAndWait()\n    for news in news_list:\n        print(news)\n        speak(news)",
+        "detail": ".history.news_20240711012835",
+        "documentation": {}
+    },
+    {
+        "label": "speak",
+        "kind": 2,
+        "importPath": ".history.openings_20240711213934",
+        "description": ".history.openings_20240711213934",
+        "peekOfCode": "def speak(audio):\n    engine.say(audio)\n    engine.runAndWait()\ndef openwebapp(query):\n    if \".com\" in query or \".co\" in query or \".org\" in query or \".in\"  in query:\n        query=query.replace('open',\"\")\n        query=query.replace(\" \",'')\n        speak(query)\n        wb.open(f\"https://www.{query}\")\ndef closewebapp(query):",
+        "detail": ".history.openings_20240711213934",
+        "documentation": {}
+    },
+    {
+        "label": "openwebapp",
+        "kind": 2,
+        "importPath": ".history.openings_20240711213934",
+        "description": ".history.openings_20240711213934",
+        "peekOfCode": "def openwebapp(query):\n    if \".com\" in query or \".co\" in query or \".org\" in query or \".in\"  in query:\n        query=query.replace('open',\"\")\n        query=query.replace(\" \",'')\n        speak(query)\n        wb.open(f\"https://www.{query}\")\ndef closewebapp(query):\n    if \"one tab\" in query or \"1 tab\" in query or \"tab\" in query:\n        speak('closing the tab')\n        pg.hotkey(\"ctrl\",\"w\") # to close any tab, we can type ctrl+w, this will close the tab",
+        "detail": ".history.openings_20240711213934",
+        "documentation": {}
+    },
+    {
+        "label": "closewebapp",
+        "kind": 2,
+        "importPath": ".history.openings_20240711213934",
+        "description": ".history.openings_20240711213934",
+        "peekOfCode": "def closewebapp(query):\n    if \"one tab\" in query or \"1 tab\" in query or \"tab\" in query:\n        speak('closing the tab')\n        pg.hotkey(\"ctrl\",\"w\") # to close any tab, we can type ctrl+w, this will close the tab",
+        "detail": ".history.openings_20240711213934",
+        "documentation": {}
+    },
+    {
+        "label": "speak",
+        "kind": 2,
+        "importPath": ".history.openings_20240711213938",
+        "description": ".history.openings_20240711213938",
+        "peekOfCode": "def speak(audio):\n    engine.say(audio)\n    engine.runAndWait()\ndef openwebapp(query):\n    if \".com\" in query or \".co\" in query or \".org\" in query or \".in\"  in query:\n        query=query.replace('open',\"\")\n        query=query.replace(\" \",'')\n        speak(query)\n        wb.open(f\"https://www.{query}\")\ndef closewebapp(query):",
+        "detail": ".history.openings_20240711213938",
+        "documentation": {}
+    },
+    {
+        "label": "openwebapp",
+        "kind": 2,
+        "importPath": ".history.openings_20240711213938",
+        "description": ".history.openings_20240711213938",
+        "peekOfCode": "def openwebapp(query):\n    if \".com\" in query or \".co\" in query or \".org\" in query or \".in\"  in query:\n        query=query.replace('open',\"\")\n        query=query.replace(\" \",'')\n        speak(query)\n        wb.open(f\"https://www.{query}\")\ndef closewebapp(query):\n    if \"one tab\" in query or \"1 tab\" in query or \"tab\" in query:\n        speak('closing the tab')\n        pg.hotkey(\"ctrl\",\"w\") # to close any tab, we can type ctrl+w, this will close the tab",
+        "detail": ".history.openings_20240711213938",
+        "documentation": {}
+    },
+    {
+        "label": "closewebapp",
+        "kind": 2,
+        "importPath": ".history.openings_20240711213938",
+        "description": ".history.openings_20240711213938",
+        "peekOfCode": "def closewebapp(query):\n    if \"one tab\" in query or \"1 tab\" in query or \"tab\" in query:\n        speak('closing the tab')\n        pg.hotkey(\"ctrl\",\"w\") # to close any tab, we can type ctrl+w, this will close the tab",
+        "detail": ".history.openings_20240711213938",
+        "documentation": {}
+    },
+    {
+        "label": "speak",
+        "kind": 2,
+        "importPath": ".history.openings_20240711213945",
+        "description": ".history.openings_20240711213945",
+        "peekOfCode": "def speak(audio):\n    engine.say(audio)\n    engine.runAndWait()\ndef openwebapp(query):\n    if \".com\" in query or \".co\" in query or \".org\" in query or \".in\"  in query:\n        query=query.replace('open',\"\")\n        query=query.replace(\" \",'')\n        speak(query)\n        wb.open(f\"https://www.{query}\")\ndef closewebapp(query):",
+        "detail": ".history.openings_20240711213945",
+        "documentation": {}
+    },
+    {
+        "label": "openwebapp",
+        "kind": 2,
+        "importPath": ".history.openings_20240711213945",
+        "description": ".history.openings_20240711213945",
+        "peekOfCode": "def openwebapp(query):\n    if \".com\" in query or \".co\" in query or \".org\" in query or \".in\"  in query:\n        query=query.replace('open',\"\")\n        query=query.replace(\" \",'')\n        speak(query)\n        wb.open(f\"https://www.{query}\")\ndef closewebapp(query):\n    if \"one tab\" in query or \"1 tab\" in query or \"tab\" in query:\n        speak('closing the tab')\n        pg.hotkey(\"ctrl\",\"w\") # to close any tab, we can type ctrl+w, this will close the tab",
+        "detail": ".history.openings_20240711213945",
+        "documentation": {}
+    },
+    {
+        "label": "closewebapp",
+        "kind": 2,
+        "importPath": ".history.openings_20240711213945",
+        "description": ".history.openings_20240711213945",
+        "peekOfCode": "def closewebapp(query):\n    if \"one tab\" in query or \"1 tab\" in query or \"tab\" in query:\n        speak('closing the tab')\n        pg.hotkey(\"ctrl\",\"w\") # to close any tab, we can type ctrl+w, this will close the tab",
+        "detail": ".history.openings_20240711213945",
+        "documentation": {}
+    },
+    {
+        "label": "speak",
+        "kind": 2,
+        "importPath": ".history.sam_main_20240711012035",
+        "description": ".history.sam_main_20240711012035",
+        "peekOfCode": "def speak(audio):   #making a speak function to say something as desired\n    engine.say(audio)\n    engine.runAndWait()\ndef takecommand():   # function to take your queries\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2    # time for it to pause and litsen to us\n        speech.energy_threshold=250    # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)     # time for which it will listen to us and the resets after the time(in secs)",
+        "detail": ".history.sam_main_20240711012035",
+        "documentation": {}
+    },
+    {
+        "label": "takecommand",
+        "kind": 2,
+        "importPath": ".history.sam_main_20240711012035",
+        "description": ".history.sam_main_20240711012035",
+        "peekOfCode": "def takecommand():   # function to take your queries\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2    # time for it to pause and litsen to us\n        speech.energy_threshold=250    # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)     # time for which it will listen to us and the resets after the time(in secs)\n        try:     # exception handling\n            print(\"Recognising and Understanding...\")\n            query=speech.recognize_google(audio,language='en-in')  ",
+        "detail": ".history.sam_main_20240711012035",
+        "documentation": {}
+    },
+    {
+        "label": "wait",
+        "kind": 2,
+        "importPath": ".history.sam_main_20240711012035",
+        "description": ".history.sam_main_20240711012035",
+        "peekOfCode": "def wait():  # wait function\n    start() \ndef alarm(query):   # alarm function\n    timehere = open(\"Alarmtext.txt\",\"a\")\n    timehere.write(query)\n    timehere.close()\n    os.startfile(\"alarm.py\")\ndef start():  # the start function of assistant\n    while True:\n        query=takecommand().lower()     # if no .lower(), it can get confused between upper case and lower case ",
+        "detail": ".history.sam_main_20240711012035",
+        "documentation": {}
+    },
+    {
+        "label": "alarm",
+        "kind": 2,
+        "importPath": ".history.sam_main_20240711012035",
+        "description": ".history.sam_main_20240711012035",
+        "peekOfCode": "def alarm(query):   # alarm function\n    timehere = open(\"Alarmtext.txt\",\"a\")\n    timehere.write(query)\n    timehere.close()\n    os.startfile(\"alarm.py\")\ndef start():  # the start function of assistant\n    while True:\n        query=takecommand().lower()     # if no .lower(), it can get confused between upper case and lower case \n        if \"hello\" in query or \"hey\" in query or \"hi\" in query or \"sam\" in query:\n            speak(\"hello, how are you\")",
+        "detail": ".history.sam_main_20240711012035",
+        "documentation": {}
+    },
+    {
+        "label": "start",
+        "kind": 2,
+        "importPath": ".history.sam_main_20240711012035",
+        "description": ".history.sam_main_20240711012035",
+        "peekOfCode": "def start():  # the start function of assistant\n    while True:\n        query=takecommand().lower()     # if no .lower(), it can get confused between upper case and lower case \n        if \"hello\" in query or \"hey\" in query or \"hi\" in query or \"sam\" in query:\n            speak(\"hello, how are you\")\n            main_program()\n        else:\n            start()\ndef main_program():  # the main program that works according to our queries\n    while True:                                                                 ",
+        "detail": ".history.sam_main_20240711012035",
+        "documentation": {}
+    },
+    {
+        "label": "main_program",
+        "kind": 2,
+        "importPath": ".history.sam_main_20240711012035",
+        "description": ".history.sam_main_20240711012035",
+        "peekOfCode": "def main_program():  # the main program that works according to our queries\n    while True:                                                                 \n        query=takecommand().lower()  # given up the query to perform\n        if \"tell me about you\" in query:  # intro function\n            print(about)\n            speak(about)\n        elif \"bye\" in query:   # to make the program exit or end\n            speak(\"ok, have a good day\")\n            exit()\n        elif \"wait\" in query:  # waiting function",
+        "detail": ".history.sam_main_20240711012035",
+        "documentation": {}
+    },
+    {
+        "label": "speak",
+        "kind": 2,
+        "importPath": ".history.sam_main_20240711193042",
+        "description": ".history.sam_main_20240711193042",
+        "peekOfCode": "def speak(audio):   #making a speak function to say something as desired\n    engine.say(audio)\n    engine.runAndWait()\ndef takecommand():   # function to take your queries\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2    # time for it to pause and litsen to us\n        speech.energy_threshold=250    # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)     # time for which it will listen to us and the resets after the time(in secs)",
+        "detail": ".history.sam_main_20240711193042",
+        "documentation": {}
+    },
+    {
+        "label": "takecommand",
+        "kind": 2,
+        "importPath": ".history.sam_main_20240711193042",
+        "description": ".history.sam_main_20240711193042",
+        "peekOfCode": "def takecommand():   # function to take your queries\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2    # time for it to pause and litsen to us\n        speech.energy_threshold=250    # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)     # time for which it will listen to us and the resets after the time(in secs)\n        try:     # exception handling\n            print(\"Recognising and Understanding...\")\n            query=speech.recognize_google(audio,language='en-in')  ",
+        "detail": ".history.sam_main_20240711193042",
+        "documentation": {}
+    },
+    {
+        "label": "wait",
+        "kind": 2,
+        "importPath": ".history.sam_main_20240711193042",
+        "description": ".history.sam_main_20240711193042",
+        "peekOfCode": "def wait():  # wait function\n    start() \ndef alarm(query):   # alarm function\n    timehere = open(\"Alarmtext.txt\",\"a\")\n    timehere.write(query)\n    timehere.close()\n    os.startfile(\"alarm.py\")\ndef start():  # the start function of assistant\n    while True:\n        query=takecommand().lower()     # if no .lower(), it can get confused between upper case and lower case ",
+        "detail": ".history.sam_main_20240711193042",
+        "documentation": {}
+    },
+    {
+        "label": "alarm",
+        "kind": 2,
+        "importPath": ".history.sam_main_20240711193042",
+        "description": ".history.sam_main_20240711193042",
+        "peekOfCode": "def alarm(query):   # alarm function\n    timehere = open(\"Alarmtext.txt\",\"a\")\n    timehere.write(query)\n    timehere.close()\n    os.startfile(\"alarm.py\")\ndef start():  # the start function of assistant\n    while True:\n        query=takecommand().lower()     # if no .lower(), it can get confused between upper case and lower case \n        if \"hello\" in query or \"hey\" in query or \"hi\" in query or \"sam\" in query:\n            speak(\"hello, how are you\")",
+        "detail": ".history.sam_main_20240711193042",
+        "documentation": {}
+    },
+    {
+        "label": "start",
+        "kind": 2,
+        "importPath": ".history.sam_main_20240711193042",
+        "description": ".history.sam_main_20240711193042",
+        "peekOfCode": "def start():  # the start function of assistant\n    while True:\n        query=takecommand().lower()     # if no .lower(), it can get confused between upper case and lower case \n        if \"hello\" in query or \"hey\" in query or \"hi\" in query or \"sam\" in query:\n            speak(\"hello, how are you\")\n            main_program()\n        else:\n            start()\ndef main_program():  # the main program that works according to our queries\n    while True:                                                                 ",
+        "detail": ".history.sam_main_20240711193042",
+        "documentation": {}
+    },
+    {
+        "label": "main_program",
+        "kind": 2,
+        "importPath": ".history.sam_main_20240711193042",
+        "description": ".history.sam_main_20240711193042",
+        "peekOfCode": "def main_program():  # the main program that works according to our queries\n    while True:                                                                 \n        query=takecommand().lower()  # given up the query to perform\n        if \"tell me about you\" in query:  # intro function\n            print(about)\n            speak(about)\n        elif \"bye\" in query:   # to make the program exit or end\n            speak(\"ok, have a good day\")\n            exit()\n        elif \"wait\" in query:  # waiting function",
+        "detail": ".history.sam_main_20240711193042",
+        "documentation": {}
+    },
+    {
+        "label": "speak",
+        "kind": 2,
+        "importPath": ".history.sam_main_20240711193043",
+        "description": ".history.sam_main_20240711193043",
+        "peekOfCode": "def speak(audio):   #making a speak function to say something as desired\n    engine.say(audio)\n    engine.runAndWait()\ndef takecommand():   # function to take your queries\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2    # time for it to pause and litsen to us\n        speech.energy_threshold=250    # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)     # time for which it will listen to us and the resets after the time(in secs)",
+        "detail": ".history.sam_main_20240711193043",
+        "documentation": {}
+    },
+    {
+        "label": "takecommand",
+        "kind": 2,
+        "importPath": ".history.sam_main_20240711193043",
+        "description": ".history.sam_main_20240711193043",
+        "peekOfCode": "def takecommand():   # function to take your queries\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2    # time for it to pause and litsen to us\n        speech.energy_threshold=250    # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)     # time for which it will listen to us and the resets after the time(in secs)\n        try:     # exception handling\n            print(\"Recognising and Understanding...\")\n            query=speech.recognize_google(audio,language='en-in')  ",
+        "detail": ".history.sam_main_20240711193043",
+        "documentation": {}
+    },
+    {
+        "label": "wait",
+        "kind": 2,
+        "importPath": ".history.sam_main_20240711193043",
+        "description": ".history.sam_main_20240711193043",
+        "peekOfCode": "def wait():  # wait function\n    start() \ndef alarm(query):   # alarm function\n    timehere = open(\"Alarmtext.txt\",\"a\")\n    timehere.write(query)\n    timehere.close()\n    os.startfile(\"alarm.py\")\ndef start():  # the start function of assistant\n    while True:\n        query=takecommand().lower()     # if no .lower(), it can get confused between upper case and lower case ",
+        "detail": ".history.sam_main_20240711193043",
+        "documentation": {}
+    },
+    {
+        "label": "alarm",
+        "kind": 2,
+        "importPath": ".history.sam_main_20240711193043",
+        "description": ".history.sam_main_20240711193043",
+        "peekOfCode": "def alarm(query):   # alarm function\n    timehere = open(\"Alarmtext.txt\",\"a\")\n    timehere.write(query)\n    timehere.close()\n    os.startfile(\"alarm.py\")\ndef start():  # the start function of assistant\n    while True:\n        query=takecommand().lower()     # if no .lower(), it can get confused between upper case and lower case \n        if \"hello\" in query or \"hey\" in query or \"hi\" in query or \"sam\" in query:\n            speak(\"hello, how are you\")",
+        "detail": ".history.sam_main_20240711193043",
+        "documentation": {}
+    },
+    {
+        "label": "start",
+        "kind": 2,
+        "importPath": ".history.sam_main_20240711193043",
+        "description": ".history.sam_main_20240711193043",
+        "peekOfCode": "def start():  # the start function of assistant\n    while True:\n        query=takecommand().lower()     # if no .lower(), it can get confused between upper case and lower case \n        if \"hello\" in query or \"hey\" in query or \"hi\" in query or \"sam\" in query:\n            speak(\"hello, how are you\")\n            main_program()\n        else:\n            start()\ndef main_program():  # the main program that works according to our queries\n    while True:                                                                 ",
+        "detail": ".history.sam_main_20240711193043",
+        "documentation": {}
+    },
+    {
+        "label": "main_program",
+        "kind": 2,
+        "importPath": ".history.sam_main_20240711193043",
+        "description": ".history.sam_main_20240711193043",
+        "peekOfCode": "def main_program():  # the main program that works according to our queries\n    while True:                                                                 \n        query=takecommand().lower()  # given up the query to perform\n        if \"tell me about you\" in query:  # intro function\n            print(about)\n            speak(about)\n        elif \"bye\" in query:   # to make the program exit or end\n            speak(\"ok, have a good day\")\n            exit()\n        elif \"wait\" in query:  # waiting function",
+        "detail": ".history.sam_main_20240711193043",
+        "documentation": {}
+    },
+    {
+        "label": "Tee",
+        "kind": 6,
+        "importPath": "sam_env.Scripts.pywin32_postinstall",
+        "description": "sam_env.Scripts.pywin32_postinstall",
+        "peekOfCode": "class Tee:\n    def __init__(self, file):\n        self.f = file\n    def write(self, what):\n        if self.f is not None:\n            try:\n                self.f.write(what.replace(\"\\n\", \"\\r\\n\"))\n            except IOError:\n                pass\n        tee_f.write(what)",
+        "detail": "sam_env.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "CopyTo",
+        "kind": 2,
+        "importPath": "sam_env.Scripts.pywin32_postinstall",
+        "description": "sam_env.Scripts.pywin32_postinstall",
+        "peekOfCode": "def CopyTo(desc, src, dest):\n    import win32api\n    import win32con\n    while 1:\n        try:\n            win32api.CopyFile(src, dest, 0)\n            return\n        except win32api.error as details:\n            if details.winerror == 5:  # access denied - user not admin.\n                raise",
+        "detail": "sam_env.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "LoadSystemModule",
+        "kind": 2,
+        "importPath": "sam_env.Scripts.pywin32_postinstall",
+        "description": "sam_env.Scripts.pywin32_postinstall",
+        "peekOfCode": "def LoadSystemModule(lib_dir, modname):\n    # See if this is a debug build.\n    import importlib.machinery\n    import importlib.util\n    suffix = \"_d\" if \"_d.pyd\" in importlib.machinery.EXTENSION_SUFFIXES else \"\"\n    filename = \"%s%d%d%s.dll\" % (\n        modname,\n        sys.version_info[0],\n        sys.version_info[1],\n        suffix,",
+        "detail": "sam_env.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "SetPyKeyVal",
+        "kind": 2,
+        "importPath": "sam_env.Scripts.pywin32_postinstall",
+        "description": "sam_env.Scripts.pywin32_postinstall",
+        "peekOfCode": "def SetPyKeyVal(key_name, value_name, value):\n    root_hkey = get_root_hkey()\n    root_key = winreg.OpenKey(root_hkey, root_key_name)\n    try:\n        my_key = winreg.CreateKey(root_key, key_name)\n        try:\n            winreg.SetValueEx(my_key, value_name, 0, winreg.REG_SZ, value)\n            if verbose:\n                print(\"-> %s\\\\%s[%s]=%r\" % (root_key_name, key_name, value_name, value))\n        finally:",
+        "detail": "sam_env.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "UnsetPyKeyVal",
+        "kind": 2,
+        "importPath": "sam_env.Scripts.pywin32_postinstall",
+        "description": "sam_env.Scripts.pywin32_postinstall",
+        "peekOfCode": "def UnsetPyKeyVal(key_name, value_name, delete_key=False):\n    root_hkey = get_root_hkey()\n    root_key = winreg.OpenKey(root_hkey, root_key_name)\n    try:\n        my_key = winreg.OpenKey(root_key, key_name, 0, winreg.KEY_SET_VALUE)\n        try:\n            winreg.DeleteValue(my_key, value_name)\n            if verbose:\n                print(\"-> DELETE %s\\\\%s[%s]\" % (root_key_name, key_name, value_name))\n        finally:",
+        "detail": "sam_env.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "RegisterCOMObjects",
+        "kind": 2,
+        "importPath": "sam_env.Scripts.pywin32_postinstall",
+        "description": "sam_env.Scripts.pywin32_postinstall",
+        "peekOfCode": "def RegisterCOMObjects(register=True):\n    import win32com.server.register\n    if register:\n        func = win32com.server.register.RegisterClasses\n    else:\n        func = win32com.server.register.UnregisterClasses\n    flags = {}\n    if not verbose:\n        flags[\"quiet\"] = 1\n    for module, klass_name in com_modules:",
+        "detail": "sam_env.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "RegisterHelpFile",
+        "kind": 2,
+        "importPath": "sam_env.Scripts.pywin32_postinstall",
+        "description": "sam_env.Scripts.pywin32_postinstall",
+        "peekOfCode": "def RegisterHelpFile(register=True, lib_dir=None):\n    if lib_dir is None:\n        lib_dir = sysconfig.get_paths()[\"platlib\"]\n    if register:\n        # Register the .chm help file.\n        chm_file = os.path.join(lib_dir, \"PyWin32.chm\")\n        if os.path.isfile(chm_file):\n            # This isn't recursive, so if 'Help' doesn't exist, we croak\n            SetPyKeyVal(\"Help\", None, None)\n            SetPyKeyVal(\"Help\\\\Pythonwin Reference\", None, chm_file)",
+        "detail": "sam_env.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "RegisterPythonwin",
+        "kind": 2,
+        "importPath": "sam_env.Scripts.pywin32_postinstall",
+        "description": "sam_env.Scripts.pywin32_postinstall",
+        "peekOfCode": "def RegisterPythonwin(register=True, lib_dir=None):\n    \"\"\"Add (or remove) Pythonwin to context menu for python scripts.\n    ??? Should probably also add Edit command for pys files also.\n    Also need to remove these keys on uninstall, but there's no function\n        like file_created to add registry entries to uninstall log ???\n    \"\"\"\n    import os\n    if lib_dir is None:\n        lib_dir = sysconfig.get_paths()[\"platlib\"]\n    classes_root = get_root_hkey()",
+        "detail": "sam_env.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "get_shortcuts_folder",
+        "kind": 2,
+        "importPath": "sam_env.Scripts.pywin32_postinstall",
+        "description": "sam_env.Scripts.pywin32_postinstall",
+        "peekOfCode": "def get_shortcuts_folder():\n    if get_root_hkey() == winreg.HKEY_LOCAL_MACHINE:\n        try:\n            fldr = get_special_folder_path(\"CSIDL_COMMON_PROGRAMS\")\n        except OSError:\n            # No CSIDL_COMMON_PROGRAMS on this platform\n            fldr = get_special_folder_path(\"CSIDL_PROGRAMS\")\n    else:\n        # non-admin install - always goes in this user's start menu.\n        fldr = get_special_folder_path(\"CSIDL_PROGRAMS\")",
+        "detail": "sam_env.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "get_system_dir",
+        "kind": 2,
+        "importPath": "sam_env.Scripts.pywin32_postinstall",
+        "description": "sam_env.Scripts.pywin32_postinstall",
+        "peekOfCode": "def get_system_dir():\n    import win32api  # we assume this exists.\n    try:\n        import pythoncom\n        import win32process\n        from win32com.shell import shell, shellcon\n        try:\n            if win32process.IsWow64Process():\n                return shell.SHGetSpecialFolderPath(0, shellcon.CSIDL_SYSTEMX86)\n            return shell.SHGetSpecialFolderPath(0, shellcon.CSIDL_SYSTEM)",
+        "detail": "sam_env.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "fixup_dbi",
+        "kind": 2,
+        "importPath": "sam_env.Scripts.pywin32_postinstall",
+        "description": "sam_env.Scripts.pywin32_postinstall",
+        "peekOfCode": "def fixup_dbi():\n    # We used to have a dbi.pyd with our .pyd files, but now have a .py file.\n    # If the user didn't uninstall, they will find the .pyd which will cause\n    # problems - so handle that.\n    import win32api\n    import win32con\n    pyd_name = os.path.join(os.path.dirname(win32api.__file__), \"dbi.pyd\")\n    pyd_d_name = os.path.join(os.path.dirname(win32api.__file__), \"dbi_d.pyd\")\n    py_name = os.path.join(os.path.dirname(win32con.__file__), \"dbi.py\")\n    for this_pyd in (pyd_name, pyd_d_name):",
+        "detail": "sam_env.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "install",
+        "kind": 2,
+        "importPath": "sam_env.Scripts.pywin32_postinstall",
+        "description": "sam_env.Scripts.pywin32_postinstall",
+        "peekOfCode": "def install(lib_dir):\n    import traceback\n    # The .pth file is now installed as a regular file.\n    # Create the .pth file in the site-packages dir, and use only relative paths\n    # We used to write a .pth directly to sys.prefix - clobber it.\n    if os.path.isfile(os.path.join(sys.prefix, \"pywin32.pth\")):\n        os.unlink(os.path.join(sys.prefix, \"pywin32.pth\"))\n    # The .pth may be new and therefore not loaded in this session.\n    # Setup the paths just in case.\n    for name in \"win32 win32\\\\lib Pythonwin\".split():",
+        "detail": "sam_env.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "uninstall",
+        "kind": 2,
+        "importPath": "sam_env.Scripts.pywin32_postinstall",
+        "description": "sam_env.Scripts.pywin32_postinstall",
+        "peekOfCode": "def uninstall(lib_dir):\n    # First ensure our system modules are loaded from pywin32_system, so\n    # we can remove the ones we copied...\n    LoadSystemModule(lib_dir, \"pywintypes\")\n    LoadSystemModule(lib_dir, \"pythoncom\")\n    try:\n        RegisterCOMObjects(False)\n    except Exception as why:\n        print(\"Failed to unregister COM objects: %s\" % (why,))\n    try:",
+        "detail": "sam_env.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "verify_destination",
+        "kind": 2,
+        "importPath": "sam_env.Scripts.pywin32_postinstall",
+        "description": "sam_env.Scripts.pywin32_postinstall",
+        "peekOfCode": "def verify_destination(location):\n    if not os.path.isdir(location):\n        raise argparse.ArgumentTypeError('Path \"{}\" does not exist!'.format(location))\n    return location\ndef main():\n    import argparse\n    parser = argparse.ArgumentParser(\n        formatter_class=argparse.RawDescriptionHelpFormatter,\n        description=\"\"\"A post-install script for the pywin32 extensions.\n    * Typical usage:",
+        "detail": "sam_env.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "sam_env.Scripts.pywin32_postinstall",
+        "description": "sam_env.Scripts.pywin32_postinstall",
+        "peekOfCode": "def main():\n    import argparse\n    parser = argparse.ArgumentParser(\n        formatter_class=argparse.RawDescriptionHelpFormatter,\n        description=\"\"\"A post-install script for the pywin32 extensions.\n    * Typical usage:\n    > python pywin32_postinstall.py -install\n    If you installed pywin32 via a .exe installer, this should be run\n    automatically after installation, but if it fails you can run it again.\n    If you installed pywin32 via PIP, you almost certainly need to run this to",
+        "detail": "sam_env.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "tee_f",
+        "kind": 5,
+        "importPath": "sam_env.Scripts.pywin32_postinstall",
+        "description": "sam_env.Scripts.pywin32_postinstall",
+        "peekOfCode": "tee_f = open(os.path.join(tempfile.gettempdir(), \"pywin32_postinstall.log\"), \"w\")\nclass Tee:\n    def __init__(self, file):\n        self.f = file\n    def write(self, what):\n        if self.f is not None:\n            try:\n                self.f.write(what.replace(\"\\n\", \"\\r\\n\"))\n            except IOError:\n                pass",
+        "detail": "sam_env.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "sys.stderr",
+        "kind": 5,
+        "importPath": "sam_env.Scripts.pywin32_postinstall",
+        "description": "sam_env.Scripts.pywin32_postinstall",
+        "peekOfCode": "sys.stderr = Tee(sys.stderr)\nsys.stdout = Tee(sys.stdout)\ncom_modules = [\n    # module_name,                      class_names\n    (\"win32com.servers.interp\", \"Interpreter\"),\n    (\"win32com.servers.dictionary\", \"DictionaryPolicy\"),\n    (\"win32com.axscript.client.pyscript\", \"PyScript\"),\n]\n# Is this a 'silent' install - ie, avoid all dialogs.\n# Different than 'verbose'",
+        "detail": "sam_env.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "sys.stdout",
+        "kind": 5,
+        "importPath": "sam_env.Scripts.pywin32_postinstall",
+        "description": "sam_env.Scripts.pywin32_postinstall",
+        "peekOfCode": "sys.stdout = Tee(sys.stdout)\ncom_modules = [\n    # module_name,                      class_names\n    (\"win32com.servers.interp\", \"Interpreter\"),\n    (\"win32com.servers.dictionary\", \"DictionaryPolicy\"),\n    (\"win32com.axscript.client.pyscript\", \"PyScript\"),\n]\n# Is this a 'silent' install - ie, avoid all dialogs.\n# Different than 'verbose'\nsilent = 0",
+        "detail": "sam_env.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "com_modules",
+        "kind": 5,
+        "importPath": "sam_env.Scripts.pywin32_postinstall",
+        "description": "sam_env.Scripts.pywin32_postinstall",
+        "peekOfCode": "com_modules = [\n    # module_name,                      class_names\n    (\"win32com.servers.interp\", \"Interpreter\"),\n    (\"win32com.servers.dictionary\", \"DictionaryPolicy\"),\n    (\"win32com.axscript.client.pyscript\", \"PyScript\"),\n]\n# Is this a 'silent' install - ie, avoid all dialogs.\n# Different than 'verbose'\nsilent = 0\n# Verbosity of output messages.",
+        "detail": "sam_env.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "silent",
+        "kind": 5,
+        "importPath": "sam_env.Scripts.pywin32_postinstall",
+        "description": "sam_env.Scripts.pywin32_postinstall",
+        "peekOfCode": "silent = 0\n# Verbosity of output messages.\nverbose = 1\nroot_key_name = \"Software\\\\Python\\\\PythonCore\\\\\" + sys.winver\ntry:\n    # When this script is run from inside the bdist_wininst installer,\n    # file_created() and directory_created() are additional builtin\n    # functions which write lines to Python23\\pywin32-install.log. This is\n    # a list of actions for the uninstaller, the format is inspired by what\n    # the Wise installer also creates.",
+        "detail": "sam_env.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "verbose",
+        "kind": 5,
+        "importPath": "sam_env.Scripts.pywin32_postinstall",
+        "description": "sam_env.Scripts.pywin32_postinstall",
+        "peekOfCode": "verbose = 1\nroot_key_name = \"Software\\\\Python\\\\PythonCore\\\\\" + sys.winver\ntry:\n    # When this script is run from inside the bdist_wininst installer,\n    # file_created() and directory_created() are additional builtin\n    # functions which write lines to Python23\\pywin32-install.log. This is\n    # a list of actions for the uninstaller, the format is inspired by what\n    # the Wise installer also creates.\n    file_created\n    is_bdist_wininst = True",
+        "detail": "sam_env.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "root_key_name",
+        "kind": 5,
+        "importPath": "sam_env.Scripts.pywin32_postinstall",
+        "description": "sam_env.Scripts.pywin32_postinstall",
+        "peekOfCode": "root_key_name = \"Software\\\\Python\\\\PythonCore\\\\\" + sys.winver\ntry:\n    # When this script is run from inside the bdist_wininst installer,\n    # file_created() and directory_created() are additional builtin\n    # functions which write lines to Python23\\pywin32-install.log. This is\n    # a list of actions for the uninstaller, the format is inspired by what\n    # the Wise installer also creates.\n    file_created\n    is_bdist_wininst = True\nexcept NameError:",
+        "detail": "sam_env.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "run_test",
+        "kind": 2,
+        "importPath": "sam_env.Scripts.pywin32_testall",
+        "description": "sam_env.Scripts.pywin32_testall",
+        "peekOfCode": "def run_test(script, cmdline_extras):\n    dirname, scriptname = os.path.split(script)\n    # some tests prefer to be run from their directory.\n    cmd = [sys.executable, \"-u\", scriptname] + cmdline_extras\n    print(\"--- Running '%s' ---\" % script)\n    sys.stdout.flush()\n    result = subprocess.run(cmd, check=False, cwd=dirname)\n    print(\"*** Test script '%s' exited with %s\" % (script, result.returncode))\n    sys.stdout.flush()\n    if result.returncode:",
+        "detail": "sam_env.Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "find_and_run",
+        "kind": 2,
+        "importPath": "sam_env.Scripts.pywin32_testall",
+        "description": "sam_env.Scripts.pywin32_testall",
+        "peekOfCode": "def find_and_run(possible_locations, extras):\n    for maybe in possible_locations:\n        if os.path.isfile(maybe):\n            run_test(maybe, extras)\n            break\n    else:\n        raise RuntimeError(\n            \"Failed to locate a test script in one of %s\" % possible_locations\n        )\ndef main():",
+        "detail": "sam_env.Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "sam_env.Scripts.pywin32_testall",
+        "description": "sam_env.Scripts.pywin32_testall",
+        "peekOfCode": "def main():\n    import argparse\n    code_directories = [this_dir] + site_packages\n    parser = argparse.ArgumentParser(\n        description=\"A script to trigger tests in all subprojects of PyWin32.\"\n    )\n    parser.add_argument(\n        \"-no-user-interaction\",\n        default=False,\n        action=\"store_true\",",
+        "detail": "sam_env.Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "this_dir",
+        "kind": 5,
+        "importPath": "sam_env.Scripts.pywin32_testall",
+        "description": "sam_env.Scripts.pywin32_testall",
+        "peekOfCode": "this_dir = os.path.dirname(__file__)\nsite_packages = [\n    site.getusersitepackages(),\n] + site.getsitepackages()\nfailures = []\n# Run a test using subprocess and wait for the result.\n# If we get an returncode != 0, we know that there was an error, but we don't\n# abort immediately - we run as many tests as we can.\ndef run_test(script, cmdline_extras):\n    dirname, scriptname = os.path.split(script)",
+        "detail": "sam_env.Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "site_packages",
+        "kind": 5,
+        "importPath": "sam_env.Scripts.pywin32_testall",
+        "description": "sam_env.Scripts.pywin32_testall",
+        "peekOfCode": "site_packages = [\n    site.getusersitepackages(),\n] + site.getsitepackages()\nfailures = []\n# Run a test using subprocess and wait for the result.\n# If we get an returncode != 0, we know that there was an error, but we don't\n# abort immediately - we run as many tests as we can.\ndef run_test(script, cmdline_extras):\n    dirname, scriptname = os.path.split(script)\n    # some tests prefer to be run from their directory.",
+        "detail": "sam_env.Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "failures",
+        "kind": 5,
+        "importPath": "sam_env.Scripts.pywin32_testall",
+        "description": "sam_env.Scripts.pywin32_testall",
+        "peekOfCode": "failures = []\n# Run a test using subprocess and wait for the result.\n# If we get an returncode != 0, we know that there was an error, but we don't\n# abort immediately - we run as many tests as we can.\ndef run_test(script, cmdline_extras):\n    dirname, scriptname = os.path.split(script)\n    # some tests prefer to be run from their directory.\n    cmd = [sys.executable, \"-u\", scriptname] + cmdline_extras\n    print(\"--- Running '%s' ---\" % script)\n    sys.stdout.flush()",
+        "detail": "sam_env.Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": "Scripts.activate_this",
+        "description": "Scripts.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
+        "detail": "Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": "Scripts.activate_this",
+        "description": "Scripts.activate_this",
+        "peekOfCode": "base = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)",
+        "detail": "Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": "Scripts.activate_this",
+        "description": "Scripts.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix",
+        "detail": "Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": "Scripts.activate_this",
+        "description": "Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV_PROMPT\"]",
+        "kind": 5,
+        "importPath": "Scripts.activate_this",
+        "description": "Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = \"\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": "Scripts.activate_this",
+        "description": "Scripts.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": "Scripts.activate_this",
+        "description": "Scripts.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": "Scripts.activate_this",
+        "description": "Scripts.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": "Scripts.activate_this",
+        "description": "Scripts.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": "Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "set_alarm",
+        "kind": 2,
+        "importPath": "alarm",
+        "description": "alarm",
+        "peekOfCode": "def set_alarm(alarm_time, sound_file):\n    alarm_hour, alarm_minute = map(int, alarm_time.split(\":\"))\n    print(\"Alarm is set for {}:{} \".format(alarm_hour, alarm_minute))\n    while True:\n        now = datetime.datetime.now()\n        if (now.hour == alarm_hour and\n            now.minute == alarm_minute):\n            print(\"Wake Up!\")\n            os.system(\"start \" + sound_file)\n            break",
+        "detail": "alarm",
+        "documentation": {}
+    },
+    {
+        "label": "speak",
+        "kind": 2,
+        "importPath": "news",
+        "description": "news",
+        "peekOfCode": "def speak(audio):\n    engine.say(audio)\n    engine.runAndWait()\ndef takecommand():\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2                                                         # time for it to pause and litsen to us\n        speech.energy_threshold=250                                                  # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)                                                  # time for which it will listen to us and the resets after the time(in secs)",
+        "detail": "news",
+        "documentation": {}
+    },
+    {
+        "label": "takecommand",
+        "kind": 2,
+        "importPath": "news",
+        "description": "news",
+        "peekOfCode": "def takecommand():\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2                                                         # time for it to pause and litsen to us\n        speech.energy_threshold=250                                                  # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)                                                  # time for which it will listen to us and the resets after the time(in secs)\n        try:                                                                             # exception handling\n            print(\"Recognising and Understanding...\")\n            query=speech.recognize_google(audio,language='en-in')  ",
+        "detail": "news",
+        "documentation": {}
+    },
+    {
+        "label": "get_news",
+        "kind": 2,
+        "importPath": "news",
+        "description": "news",
+        "peekOfCode": "def get_news():\n    url = 'https://news.google.com/rss'\n    response = requests.get(url)\n    try:\n        soup = BeautifulSoup(response.content, 'lxml')\n    except Exception:\n        warnings.filterwarnings(\"ignore\", category=UserWarning, message=\".*looks like you're parsing an XML document using an HTML parser.*\")\n        soup = BeautifulSoup(response.content, 'html.parser')    \n    headlines = soup.find_all('item', limit=5)\n    news_list = []",
+        "detail": "news",
+        "documentation": {}
+    },
+    {
+        "label": "read_news",
+        "kind": 2,
+        "importPath": "news",
+        "description": "news",
+        "peekOfCode": "def read_news():\n    news_list = get_news()\n    engine.say(\"Here are the top news headlines\")\n    engine.runAndWait()\n    for news in news_list:\n        print(news)\n        speak(news)",
+        "detail": "news",
+        "documentation": {}
+    },
+    {
+        "label": "speak",
+        "kind": 2,
+        "importPath": "openings",
+        "description": "openings",
+        "peekOfCode": "def speak(audio):\n    engine.say(audio)\n    engine.runAndWait()\ndef openwebapp(query):\n    if \".com\" in query or \".co\" in query or \".org\" in query or \".in\"  in query:\n        query=query.replace('open',\"\")\n        query=query.replace(\" \",'')\n        speak(query)\n        wb.open(f\"https://www.{query}\")\ndef closewebapp(query):",
+        "detail": "openings",
+        "documentation": {}
+    },
+    {
+        "label": "openwebapp",
+        "kind": 2,
+        "importPath": "openings",
+        "description": "openings",
+        "peekOfCode": "def openwebapp(query):\n    if \".com\" in query or \".co\" in query or \".org\" in query or \".in\"  in query:\n        query=query.replace('open',\"\")\n        query=query.replace(\" \",'')\n        speak(query)\n        wb.open(f\"https://www.{query}\")\ndef closewebapp(query):\n    if \"one tab\" in query or \"1 tab\" in query or \"tab\" in query:\n        speak('closing the tab')\n        pg.hotkey(\"ctrl\",\"w\") # to close any tab, we can type ctrl+w, this will close the tab",
+        "detail": "openings",
+        "documentation": {}
+    },
+    {
+        "label": "closewebapp",
+        "kind": 2,
+        "importPath": "openings",
+        "description": "openings",
+        "peekOfCode": "def closewebapp(query):\n    if \"one tab\" in query or \"1 tab\" in query or \"tab\" in query:\n        speak('closing the tab')\n        pg.hotkey(\"ctrl\",\"w\") # to close any tab, we can type ctrl+w, this will close the tab",
+        "detail": "openings",
+        "documentation": {}
+    },
+    {
+        "label": "speak",
+        "kind": 2,
+        "importPath": "sam_main",
+        "description": "sam_main",
+        "peekOfCode": "def speak(audio):   #making a speak function to say something as desired\n    engine.say(audio)\n    engine.runAndWait()\ndef takecommand():   # function to take your queries\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2    # time for it to pause and litsen to us\n        speech.energy_threshold=250    # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)     # time for which it will listen to us and the resets after the time(in secs)",
+        "detail": "sam_main",
+        "documentation": {}
+    },
+    {
+        "label": "takecommand",
+        "kind": 2,
+        "importPath": "sam_main",
+        "description": "sam_main",
+        "peekOfCode": "def takecommand():   # function to take your queries\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2    # time for it to pause and litsen to us\n        speech.energy_threshold=250    # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)     # time for which it will listen to us and the resets after the time(in secs)\n        try:     # exception handling\n            print(\"Recognising and Understanding...\")\n            query=speech.recognize_google(audio,language='en-in')  ",
+        "detail": "sam_main",
+        "documentation": {}
+    },
+    {
+        "label": "wait",
+        "kind": 2,
+        "importPath": "sam_main",
+        "description": "sam_main",
+        "peekOfCode": "def wait():  # wait function\n    start() \ndef alarm(query):   # alarm function\n    timehere = open(\"Alarmtext.txt\",\"a\")\n    timehere.write(query)\n    timehere.close()\n    os.startfile(\"alarm.py\")\ndef start():  # the start function of assistant\n    while True:\n        query=takecommand().lower()     # if no .lower(), it can get confused between upper case and lower case ",
+        "detail": "sam_main",
+        "documentation": {}
+    },
+    {
+        "label": "alarm",
+        "kind": 2,
+        "importPath": "sam_main",
+        "description": "sam_main",
+        "peekOfCode": "def alarm(query):   # alarm function\n    timehere = open(\"Alarmtext.txt\",\"a\")\n    timehere.write(query)\n    timehere.close()\n    os.startfile(\"alarm.py\")\ndef start():  # the start function of assistant\n    while True:\n        query=takecommand().lower()     # if no .lower(), it can get confused between upper case and lower case \n        if \"hello\" in query or \"hey\" in query or \"hi\" in query or \"sam\" in query:\n            speak(\"hello, how are you\")",
+        "detail": "sam_main",
+        "documentation": {}
+    },
+    {
+        "label": "start",
+        "kind": 2,
+        "importPath": "sam_main",
+        "description": "sam_main",
+        "peekOfCode": "def start():  # the start function of assistant\n    while True:\n        query=takecommand().lower()     # if no .lower(), it can get confused between upper case and lower case \n        if \"hello\" in query or \"hey\" in query or \"hi\" in query or \"sam\" in query:\n            speak(\"hello, how are you\")\n            main_program()\n        else:\n            start()\ndef main_program():  # the main program that works according to our queries\n    while True:                                                                 ",
+        "detail": "sam_main",
+        "documentation": {}
+    },
+    {
+        "label": "main_program",
+        "kind": 2,
+        "importPath": "sam_main",
+        "description": "sam_main",
+        "peekOfCode": "def main_program():  # the main program that works according to our queries\n    while True:                                                                 \n        query=takecommand().lower()  # given up the query to perform\n        if \"tell me about you\" in query:  # intro function\n            print(about)\n            speak(about)\n        elif \"bye\" in query:   # to make the program exit or end\n            speak(\"ok, have a good day\")\n            exit()\n        elif \"wait\" in query:  # waiting function",
+        "detail": "sam_main",
+        "documentation": {}
+    },
+    {
+        "label": "speak",
+        "kind": 2,
+        "importPath": "search",
+        "description": "search",
+        "peekOfCode": "def speak(audio):\n    engine.say(audio)\n    engine.runAndWait()\ndef takecommand():\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2                                                         \n        speech.energy_threshold=250                                                  \n        audio=speech.listen(source,0,5)                                                  ",
+        "detail": "search",
+        "documentation": {}
+    },
+    {
+        "label": "takecommand",
+        "kind": 2,
+        "importPath": "search",
+        "description": "search",
+        "peekOfCode": "def takecommand():\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2                                                         \n        speech.energy_threshold=250                                                  \n        audio=speech.listen(source,0,5)                                                  \n        try:                                                                            \n            print(\"Recognising and Understanding...\")\n            query=speech.recognize_google(audio,language='en-in')  ",
+        "detail": "search",
+        "documentation": {}
+    },
+    {
+        "label": "search",
+        "kind": 2,
+        "importPath": "search",
+        "description": "search",
+        "peekOfCode": "def search(query):   # google search \n    if \"google\" in query:\n        query=query.replace(\"hey\",\"\")\n        query=query.replace(\"eva\",\"\")\n        query=query.replace(\"can you\",\"\")\n        query=query.replace(\"google\",\"\")\n        query=query.replace(\"why\",\"\")\n        query=query.replace(\"what\",\"\")\n        query=query.replace(\"when\",\"\")\n        query=query.replace(\"where\",\"\")",
+        "detail": "search",
+        "documentation": {}
+    },
+    {
+        "label": "youtubesearch",
+        "kind": 2,
+        "importPath": "search",
+        "description": "search",
+        "peekOfCode": "def youtubesearch(query):  #to search anything on youtube\n    if \"youtube\" in query:\n        engine.say(\"searching on youtube\")\n        engine.runAndWait()\n        query=query.replace(\"hey\",\"\")   \n        query=query.replace(\"eva\",\"\")\n        query=query.replace(\"can you\",\"\")\n        query=query.replace(\"google\",\"\")\n        query=query.replace(\"search\",\"\")\n        query=query.replace(\"youtube\",\"\")",
+        "detail": "search",
+        "documentation": {}
+    },
+    {
+        "label": "wikisearch",
+        "kind": 2,
+        "importPath": "search",
+        "description": "search",
+        "peekOfCode": "def wikisearch(query):  #wikipedia\n    if 'wikipedia' in query:\n        engine.say(\"searching on wikipedia\")\n        engine.runAndWait()\n        query=query.replace(\"hey\",\"\")\n        query=query.replace(\"search\",\"\")\n        query=query.replace(\"wikipedia\",\"\")\n        query=query.replace(\"eva\",\"\")\n        try:\n            result=wk.summary(query,sentences=5)",
+        "detail": "search",
+        "documentation": {}
+    },
+    {
+        "label": "tempsearch",
+        "kind": 2,
+        "importPath": "search",
+        "description": "search",
+        "peekOfCode": "def tempsearch(query):  # searching for the temperature\n    if \"temperature\" in query or \"weather\" in query:\n        query=query.replace(\"what\",\"\")\n        query=query.replace(\"is\",\"\")\n        link=\"https://www.google.com/search?q=\"+query\n        result=requests.get(link)\n        data=BeautifulSoup(result.text,\"html.parser\")\n        temp=data.find(\"div\",class_=\"BNeawe\").text\n        engine.say(query)\n        engine.runAndWait()",
+        "detail": "search",
+        "documentation": {}
+    },
+    {
+        "label": "timesearch",
+        "kind": 2,
+        "importPath": "search",
+        "description": "search",
+        "peekOfCode": "def timesearch(query):  # searching for the current time\n    if \"time\" in query:\n        query=query.replace(\"what\",\"\")\n        query=query.replace(\"is\",\"\")\n        query=query.replace(\"the\",\"\")\n        time=datetime.datetime.now().strftime(\"%H:%M\")\n        engine.say(time)\n        engine.runAndWait()\n        print(time)\ndef datesearch(query):    # searching for the current time",
+        "detail": "search",
+        "documentation": {}
+    },
+    {
+        "label": "datesearch",
+        "kind": 2,
+        "importPath": "search",
+        "description": "search",
+        "peekOfCode": "def datesearch(query):    # searching for the current time\n    if \"date\" in query:\n        query=query.replace(\"what\",\"\")\n        query=query.replace(\"is\",\"\")\n        query=query.replace(\"the\",\"\")\n        time=datetime.datetime.now().strftime(\"%d:%m:%Y\")\n        engine.say(time)\n        engine.runAndWait()\n        print(time)\ndef searchwhat(query):   # google search ",
+        "detail": "search",
+        "documentation": {}
+    },
+    {
+        "label": "searchwhat",
+        "kind": 2,
+        "importPath": "search",
+        "description": "search",
+        "peekOfCode": "def searchwhat(query):   # google search \n    if any(word in query for word in [\"what\", \"why\", \"when\", \"where\", \"how\", \"who\", \"which\"]):\n        query=query.replace(\"hey\",\"\")\n        query=query.replace(\"eva\",\"\")\n        query=query.replace(\"can you\",\"\")\n        query=query.replace(\"google\",\"\")\n        query=query.replace(\"why\",\"\")\n        query=query.replace(\"what\",\"\")\n        query=query.replace(\"when\",\"\")\n        query=query.replace(\"where\",\"\")",
+        "detail": "search",
+        "documentation": {}
+    },
+    {
+        "label": "volume_up",
+        "kind": 2,
+        "importPath": "volume_settings",
+        "description": "volume_settings",
+        "peekOfCode": "def volume_up():\n    for i in range(2):\n        kb.press(Key.media_volume_up)\n        kb.release(Key.media_volume_up)\n        sleep(0.1)\ndef volume_down():\n    for i in range(2):\n        kb.press(Key.media_volume_down)\n        kb.release(Key.media_volume_down)\n        sleep(0.1)",
+        "detail": "volume_settings",
+        "documentation": {}
+    },
+    {
+        "label": "volume_down",
+        "kind": 2,
+        "importPath": "volume_settings",
+        "description": "volume_settings",
+        "peekOfCode": "def volume_down():\n    for i in range(2):\n        kb.press(Key.media_volume_down)\n        kb.release(Key.media_volume_down)\n        sleep(0.1)",
+        "detail": "volume_settings",
+        "documentation": {}
+    }
+]

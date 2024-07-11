@@ -1,0 +1,5 @@
+l=["nice","good","excellent","fine","better","happy","marvelous"]
+def nice():
+    for i in range(len(l)):
+        print(l[i])
+nice()

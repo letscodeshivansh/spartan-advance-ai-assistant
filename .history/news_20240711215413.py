@@ -21,12 +21,12 @@ def takecommand():
     with sr.Microphone() as source:
         print("listening...")
         speech.pause_threshold=2     # time for it to pause and litsen to us
-        speech.energy_threshold=250   # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)
-        audio=speech.listen(source,0,5)     # time for which it will listen to us and the resets after the time(in secs)
-        try: # exception handling
+        speech.energy_threshold=250                                                  # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)
+        audio=speech.listen(source,0,5)                                                  # time for which it will listen to us and the resets after the time(in secs)
+        try:                                                                             # exception handling
             print("Recognising and Understanding...")
             query=speech.recognize_google(audio,language='en-in')  
-            print("You had said:",query,"\n") # english of India
+            print("You had said:",query,"\n")                                           # english of India
 
         except Exception as e:
             print("Speak Again")

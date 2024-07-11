@@ -26,7 +26,7 @@ def takecommand():
         try: # exception handling
             print("Recognising and Understanding...")
             query=speech.recognize_google(audio,language='en-in')  
-            print("You had said:",query,"\n") # english of India
+            print("You had said:",query,"\n")                                           # english of India
 
         except Exception as e:
             print("Speak Again")

@@ -83,6 +83,46 @@
         "documentation": {}
     },
     {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
         "label": "warnings",
         "kind": 6,
         "isExtraImport": true,
@@ -161,6 +201,54 @@
     },
     {
         "label": "*",
+        "importPath": "search",
+        "description": "search",
+        "isExtraImport": true,
+        "detail": "search",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "search",
+        "description": "search",
+        "isExtraImport": true,
+        "detail": "search",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "search",
+        "description": "search",
+        "isExtraImport": true,
+        "detail": "search",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "openings",
+        "description": "openings",
+        "isExtraImport": true,
+        "detail": "openings",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "openings",
+        "description": "openings",
+        "isExtraImport": true,
+        "detail": "openings",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "openings",
+        "description": "openings",
+        "isExtraImport": true,
+        "detail": "openings",
+        "documentation": {}
+    },
+    {
+        "label": "*",
         "importPath": "openings",
         "description": "openings",
         "isExtraImport": true,
@@ -225,6 +313,46 @@
     },
     {
         "label": "*",
+        "importPath": "alarm",
+        "description": "alarm",
+        "isExtraImport": true,
+        "detail": "alarm",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "alarm",
+        "description": "alarm",
+        "isExtraImport": true,
+        "detail": "alarm",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "alarm",
+        "description": "alarm",
+        "isExtraImport": true,
+        "detail": "alarm",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "volume_settings",
+        "description": "volume_settings",
+        "isExtraImport": true,
+        "detail": "volume_settings",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "volume_settings",
+        "description": "volume_settings",
+        "isExtraImport": true,
+        "detail": "volume_settings",
+        "documentation": {}
+    },
+    {
+        "label": "*",
         "importPath": "volume_settings",
         "description": "volume_settings",
         "isExtraImport": true,
@@ -253,6 +381,38 @@
         "description": "volume_settings",
         "isExtraImport": true,
         "detail": "volume_settings",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "volume_settings",
+        "description": "volume_settings",
+        "isExtraImport": true,
+        "detail": "volume_settings",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "news",
+        "description": "news",
+        "isExtraImport": true,
+        "detail": "news",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "news",
+        "description": "news",
+        "isExtraImport": true,
+        "detail": "news",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "news",
+        "description": "news",
+        "isExtraImport": true,
+        "detail": "news",
         "documentation": {}
     },
     {
@@ -610,6 +770,186 @@
     {
         "label": "speak",
         "kind": 2,
+        "importPath": ".history.news_20240711215413",
+        "description": ".history.news_20240711215413",
+        "peekOfCode": "def speak(audio):\n    engine.say(audio)\n    engine.runAndWait()\ndef takecommand():\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2     # time for it to pause and litsen to us\n        speech.energy_threshold=250                                                  # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)                                                  # time for which it will listen to us and the resets after the time(in secs)",
+        "detail": ".history.news_20240711215413",
+        "documentation": {}
+    },
+    {
+        "label": "takecommand",
+        "kind": 2,
+        "importPath": ".history.news_20240711215413",
+        "description": ".history.news_20240711215413",
+        "peekOfCode": "def takecommand():\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2     # time for it to pause and litsen to us\n        speech.energy_threshold=250                                                  # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)                                                  # time for which it will listen to us and the resets after the time(in secs)\n        try:                                                                             # exception handling\n            print(\"Recognising and Understanding...\")\n            query=speech.recognize_google(audio,language='en-in')  ",
+        "detail": ".history.news_20240711215413",
+        "documentation": {}
+    },
+    {
+        "label": "get_news",
+        "kind": 2,
+        "importPath": ".history.news_20240711215413",
+        "description": ".history.news_20240711215413",
+        "peekOfCode": "def get_news():\n    url = 'https://news.google.com/rss'\n    response = requests.get(url)\n    try:\n        soup = BeautifulSoup(response.content, 'lxml')\n    except Exception:\n        warnings.filterwarnings(\"ignore\", category=UserWarning, message=\".*looks like you're parsing an XML document using an HTML parser.*\")\n        soup = BeautifulSoup(response.content, 'html.parser')    \n    headlines = soup.find_all('item', limit=5)\n    news_list = []",
+        "detail": ".history.news_20240711215413",
+        "documentation": {}
+    },
+    {
+        "label": "read_news",
+        "kind": 2,
+        "importPath": ".history.news_20240711215413",
+        "description": ".history.news_20240711215413",
+        "peekOfCode": "def read_news():\n    news_list = get_news()\n    engine.say(\"Here are the top news headlines\")\n    engine.runAndWait()\n    for news in news_list:\n        print(news)\n        speak(news)",
+        "detail": ".history.news_20240711215413",
+        "documentation": {}
+    },
+    {
+        "label": "speak",
+        "kind": 2,
+        "importPath": ".history.news_20240711215425",
+        "description": ".history.news_20240711215425",
+        "peekOfCode": "def speak(audio):\n    engine.say(audio)\n    engine.runAndWait()\ndef takecommand():\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2     # time for it to pause and litsen to us\n        speech.energy_threshold=250   # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)     # time for which it will listen to us and the resets after the time(in secs)",
+        "detail": ".history.news_20240711215425",
+        "documentation": {}
+    },
+    {
+        "label": "takecommand",
+        "kind": 2,
+        "importPath": ".history.news_20240711215425",
+        "description": ".history.news_20240711215425",
+        "peekOfCode": "def takecommand():\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2     # time for it to pause and litsen to us\n        speech.energy_threshold=250   # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)     # time for which it will listen to us and the resets after the time(in secs)\n        try: # exception handling\n            print(\"Recognising and Understanding...\")\n            query=speech.recognize_google(audio,language='en-in')  ",
+        "detail": ".history.news_20240711215425",
+        "documentation": {}
+    },
+    {
+        "label": "get_news",
+        "kind": 2,
+        "importPath": ".history.news_20240711215425",
+        "description": ".history.news_20240711215425",
+        "peekOfCode": "def get_news():\n    url = 'https://news.google.com/rss'\n    response = requests.get(url)\n    try:\n        soup = BeautifulSoup(response.content, 'lxml')\n    except Exception:\n        warnings.filterwarnings(\"ignore\", category=UserWarning, message=\".*looks like you're parsing an XML document using an HTML parser.*\")\n        soup = BeautifulSoup(response.content, 'html.parser')    \n    headlines = soup.find_all('item', limit=5)\n    news_list = []",
+        "detail": ".history.news_20240711215425",
+        "documentation": {}
+    },
+    {
+        "label": "read_news",
+        "kind": 2,
+        "importPath": ".history.news_20240711215425",
+        "description": ".history.news_20240711215425",
+        "peekOfCode": "def read_news():\n    news_list = get_news()\n    engine.say(\"Here are the top news headlines\")\n    engine.runAndWait()\n    for news in news_list:\n        print(news)\n        speak(news)",
+        "detail": ".history.news_20240711215425",
+        "documentation": {}
+    },
+    {
+        "label": "speak",
+        "kind": 2,
+        "importPath": ".history.news_20240711215428",
+        "description": ".history.news_20240711215428",
+        "peekOfCode": "def speak(audio):\n    engine.say(audio)\n    engine.runAndWait()\ndef takecommand():\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2     # time for it to pause and litsen to us\n        speech.energy_threshold=250   # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)     # time for which it will listen to us and the resets after the time(in secs)",
+        "detail": ".history.news_20240711215428",
+        "documentation": {}
+    },
+    {
+        "label": "takecommand",
+        "kind": 2,
+        "importPath": ".history.news_20240711215428",
+        "description": ".history.news_20240711215428",
+        "peekOfCode": "def takecommand():\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2     # time for it to pause and litsen to us\n        speech.energy_threshold=250   # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)     # time for which it will listen to us and the resets after the time(in secs)\n        try: # exception handling\n            print(\"Recognising and Understanding...\")\n            query=speech.recognize_google(audio,language='en-in')  ",
+        "detail": ".history.news_20240711215428",
+        "documentation": {}
+    },
+    {
+        "label": "get_news",
+        "kind": 2,
+        "importPath": ".history.news_20240711215428",
+        "description": ".history.news_20240711215428",
+        "peekOfCode": "def get_news():\n    url = 'https://news.google.com/rss'\n    response = requests.get(url)\n    try:\n        soup = BeautifulSoup(response.content, 'lxml')\n    except Exception:\n        warnings.filterwarnings(\"ignore\", category=UserWarning, message=\".*looks like you're parsing an XML document using an HTML parser.*\")\n        soup = BeautifulSoup(response.content, 'html.parser')    \n    headlines = soup.find_all('item', limit=5)\n    news_list = []",
+        "detail": ".history.news_20240711215428",
+        "documentation": {}
+    },
+    {
+        "label": "read_news",
+        "kind": 2,
+        "importPath": ".history.news_20240711215428",
+        "description": ".history.news_20240711215428",
+        "peekOfCode": "def read_news():\n    news_list = get_news()\n    engine.say(\"Here are the top news headlines\")\n    engine.runAndWait()\n    for news in news_list:\n        print(news)\n        speak(news)",
+        "detail": ".history.news_20240711215428",
+        "documentation": {}
+    },
+    {
+        "label": "speak",
+        "kind": 2,
+        "importPath": ".history.news_20240711215430",
+        "description": ".history.news_20240711215430",
+        "peekOfCode": "def speak(audio):\n    engine.say(audio)\n    engine.runAndWait()\ndef takecommand():\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2     # time for it to pause and litsen to us\n        speech.energy_threshold=250   # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)     # time for which it will listen to us and the resets after the time(in secs)",
+        "detail": ".history.news_20240711215430",
+        "documentation": {}
+    },
+    {
+        "label": "takecommand",
+        "kind": 2,
+        "importPath": ".history.news_20240711215430",
+        "description": ".history.news_20240711215430",
+        "peekOfCode": "def takecommand():\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2     # time for it to pause and litsen to us\n        speech.energy_threshold=250   # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)     # time for which it will listen to us and the resets after the time(in secs)\n        try: # exception handling\n            print(\"Recognising and Understanding...\")\n            query=speech.recognize_google(audio,language='en-in')  ",
+        "detail": ".history.news_20240711215430",
+        "documentation": {}
+    },
+    {
+        "label": "get_news",
+        "kind": 2,
+        "importPath": ".history.news_20240711215430",
+        "description": ".history.news_20240711215430",
+        "peekOfCode": "def get_news():\n    url = 'https://news.google.com/rss'\n    response = requests.get(url)\n    try:\n        soup = BeautifulSoup(response.content, 'lxml')\n    except Exception:\n        warnings.filterwarnings(\"ignore\", category=UserWarning, message=\".*looks like you're parsing an XML document using an HTML parser.*\")\n        soup = BeautifulSoup(response.content, 'html.parser')    \n    headlines = soup.find_all('item', limit=5)\n    news_list = []",
+        "detail": ".history.news_20240711215430",
+        "documentation": {}
+    },
+    {
+        "label": "read_news",
+        "kind": 2,
+        "importPath": ".history.news_20240711215430",
+        "description": ".history.news_20240711215430",
+        "peekOfCode": "def read_news():\n    news_list = get_news()\n    engine.say(\"Here are the top news headlines\")\n    engine.runAndWait()\n    for news in news_list:\n        print(news)\n        speak(news)",
+        "detail": ".history.news_20240711215430",
+        "documentation": {}
+    },
+    {
+        "label": "speak",
+        "kind": 2,
+        "importPath": ".history.news_20240711215435",
+        "description": ".history.news_20240711215435",
+        "peekOfCode": "def speak(audio):\n    engine.say(audio)\n    engine.runAndWait()\ndef takecommand():\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2     # time for it to pause and litsen to us\n        speech.energy_threshold=250   # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)     # time for which it will listen to us and the resets after the time(in secs)",
+        "detail": ".history.news_20240711215435",
+        "documentation": {}
+    },
+    {
+        "label": "takecommand",
+        "kind": 2,
+        "importPath": ".history.news_20240711215435",
+        "description": ".history.news_20240711215435",
+        "peekOfCode": "def takecommand():\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2     # time for it to pause and litsen to us\n        speech.energy_threshold=250   # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)     # time for which it will listen to us and the resets after the time(in secs)\n        try: # exception handling\n            print(\"Recognising and Understanding...\")\n            query=speech.recognize_google(audio,language='en-in')  ",
+        "detail": ".history.news_20240711215435",
+        "documentation": {}
+    },
+    {
+        "label": "get_news",
+        "kind": 2,
+        "importPath": ".history.news_20240711215435",
+        "description": ".history.news_20240711215435",
+        "peekOfCode": "def get_news():\n    url = 'https://news.google.com/rss'\n    response = requests.get(url)\n    try:\n        soup = BeautifulSoup(response.content, 'lxml')\n    except Exception:\n        warnings.filterwarnings(\"ignore\", category=UserWarning, message=\".*looks like you're parsing an XML document using an HTML parser.*\")\n        soup = BeautifulSoup(response.content, 'html.parser')    \n    headlines = soup.find_all('item', limit=5)\n    news_list = []",
+        "detail": ".history.news_20240711215435",
+        "documentation": {}
+    },
+    {
+        "label": "read_news",
+        "kind": 2,
+        "importPath": ".history.news_20240711215435",
+        "description": ".history.news_20240711215435",
+        "peekOfCode": "def read_news():\n    news_list = get_news()\n    engine.say(\"Here are the top news headlines\")\n    engine.runAndWait()\n    for news in news_list:\n        print(news)\n        speak(news)",
+        "detail": ".history.news_20240711215435",
+        "documentation": {}
+    },
+    {
+        "label": "speak",
+        "kind": 2,
         "importPath": ".history.openings_20240711213934",
         "description": ".history.openings_20240711213934",
         "peekOfCode": "def speak(audio):\n    engine.say(audio)\n    engine.runAndWait()\ndef openwebapp(query):\n    if \".com\" in query or \".co\" in query or \".org\" in query or \".in\"  in query:\n        query=query.replace('open',\"\")\n        query=query.replace(\" \",'')\n        speak(query)\n        wb.open(f\"https://www.{query}\")\ndef closewebapp(query):",
@@ -848,6 +1188,168 @@
         "description": ".history.sam_main_20240711193043",
         "peekOfCode": "def main_program():  # the main program that works according to our queries\n    while True:                                                                 \n        query=takecommand().lower()  # given up the query to perform\n        if \"tell me about you\" in query:  # intro function\n            print(about)\n            speak(about)\n        elif \"bye\" in query:   # to make the program exit or end\n            speak(\"ok, have a good day\")\n            exit()\n        elif \"wait\" in query:  # waiting function",
         "detail": ".history.sam_main_20240711193043",
+        "documentation": {}
+    },
+    {
+        "label": "speak",
+        "kind": 2,
+        "importPath": ".history.sam_main_20240711215324",
+        "description": ".history.sam_main_20240711215324",
+        "peekOfCode": "def speak(audio):   #making a speak function to say something as desired\n    engine.say(audio)\n    engine.runAndWait()\ndef takecommand():   # function to take your queries\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2    # time for it to pause and litsen to us\n        speech.energy_threshold=250    # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)     # time for which it will listen to us and the resets after the time(in secs)",
+        "detail": ".history.sam_main_20240711215324",
+        "documentation": {}
+    },
+    {
+        "label": "takecommand",
+        "kind": 2,
+        "importPath": ".history.sam_main_20240711215324",
+        "description": ".history.sam_main_20240711215324",
+        "peekOfCode": "def takecommand():   # function to take your queries\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2    # time for it to pause and litsen to us\n        speech.energy_threshold=250    # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)     # time for which it will listen to us and the resets after the time(in secs)\n        try:     # exception handling\n            print(\"Recognising and Understanding...\")\n            query=speech.recognize_google(audio,language='en-in')  ",
+        "detail": ".history.sam_main_20240711215324",
+        "documentation": {}
+    },
+    {
+        "label": "wait",
+        "kind": 2,
+        "importPath": ".history.sam_main_20240711215324",
+        "description": ".history.sam_main_20240711215324",
+        "peekOfCode": "def wait():  # wait function\n    start() \ndef alarm(query):   # alarm function\n    timehere = open(\"Alarmtext.txt\",\"a\")\n    timehere.write(query)\n    timehere.close()\n    os.startfile(\"alarm.py\")\ndef start():  # the start function of assistant\n    while True:\n        query=takecommand().lower()     # if no .lower(), it can get confused between upper case and lower case ",
+        "detail": ".history.sam_main_20240711215324",
+        "documentation": {}
+    },
+    {
+        "label": "alarm",
+        "kind": 2,
+        "importPath": ".history.sam_main_20240711215324",
+        "description": ".history.sam_main_20240711215324",
+        "peekOfCode": "def alarm(query):   # alarm function\n    timehere = open(\"Alarmtext.txt\",\"a\")\n    timehere.write(query)\n    timehere.close()\n    os.startfile(\"alarm.py\")\ndef start():  # the start function of assistant\n    while True:\n        query=takecommand().lower()     # if no .lower(), it can get confused between upper case and lower case \n        if \"hello\" in query or \"hey\" in query or \"hi\" in query or \"sam\" in query:\n            speak(\"hello, how are you\")",
+        "detail": ".history.sam_main_20240711215324",
+        "documentation": {}
+    },
+    {
+        "label": "start",
+        "kind": 2,
+        "importPath": ".history.sam_main_20240711215324",
+        "description": ".history.sam_main_20240711215324",
+        "peekOfCode": "def start():  # the start function of assistant\n    while True:\n        query=takecommand().lower()     # if no .lower(), it can get confused between upper case and lower case \n        if \"hello\" in query or \"hey\" in query or \"hi\" in query or \"sam\" in query:\n            speak(\"hello, how are you\")\n            main_program()\n        else:\n            start()\ndef main_program():  # the main program that works according to our queries\n    while True:                                                                 ",
+        "detail": ".history.sam_main_20240711215324",
+        "documentation": {}
+    },
+    {
+        "label": "main_program",
+        "kind": 2,
+        "importPath": ".history.sam_main_20240711215324",
+        "description": ".history.sam_main_20240711215324",
+        "peekOfCode": "def main_program():  # the main program that works according to our queries\n    while True:                                                                 \n        query=takecommand().lower()  # given up the query to perform\n        if \"tell me about you\" in query:  # intro function\n            print(about)\n            speak(about)\n        elif \"bye\" in query:   # to make the program exit or end\n            speak(\"ok, have a good day\")\n            exit()\n        elif \"wait\" in query:  # waiting function",
+        "detail": ".history.sam_main_20240711215324",
+        "documentation": {}
+    },
+    {
+        "label": "speak",
+        "kind": 2,
+        "importPath": ".history.sam_main_20240711215334",
+        "description": ".history.sam_main_20240711215334",
+        "peekOfCode": "def speak(audio):   #making a speak function to say something as desired\n    engine.say(audio)\n    engine.runAndWait()\ndef takecommand():   # function to take your queries\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2    # time for it to pause and litsen to us\n        speech.energy_threshold=250    # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)     # time for which it will listen to us and the resets after the time(in secs)",
+        "detail": ".history.sam_main_20240711215334",
+        "documentation": {}
+    },
+    {
+        "label": "takecommand",
+        "kind": 2,
+        "importPath": ".history.sam_main_20240711215334",
+        "description": ".history.sam_main_20240711215334",
+        "peekOfCode": "def takecommand():   # function to take your queries\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2    # time for it to pause and litsen to us\n        speech.energy_threshold=250    # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)     # time for which it will listen to us and the resets after the time(in secs)\n        try:     # exception handling\n            print(\"Recognising and Understanding...\")\n            query=speech.recognize_google(audio,language='en-in')  ",
+        "detail": ".history.sam_main_20240711215334",
+        "documentation": {}
+    },
+    {
+        "label": "wait",
+        "kind": 2,
+        "importPath": ".history.sam_main_20240711215334",
+        "description": ".history.sam_main_20240711215334",
+        "peekOfCode": "def wait():  # wait function\n    start() \ndef alarm(query):   # alarm function\n    timehere = open(\"Alarmtext.txt\",\"a\")\n    timehere.write(query)\n    timehere.close()\n    os.startfile(\"alarm.py\")\ndef start():  # the start function of assistant\n    while True:\n        query=takecommand().lower()     # if no .lower(), it can get confused between upper case and lower case ",
+        "detail": ".history.sam_main_20240711215334",
+        "documentation": {}
+    },
+    {
+        "label": "alarm",
+        "kind": 2,
+        "importPath": ".history.sam_main_20240711215334",
+        "description": ".history.sam_main_20240711215334",
+        "peekOfCode": "def alarm(query):   # alarm function\n    timehere = open(\"Alarmtext.txt\",\"a\")\n    timehere.write(query)\n    timehere.close()\n    os.startfile(\"alarm.py\")\ndef start():  # the start function of assistant\n    while True:\n        query=takecommand().lower()     # if no .lower(), it can get confused between upper case and lower case \n        if \"hello\" in query or \"hey\" in query or \"hi\" in query or \"sam\" in query:\n            speak(\"hello, how are you\")",
+        "detail": ".history.sam_main_20240711215334",
+        "documentation": {}
+    },
+    {
+        "label": "start",
+        "kind": 2,
+        "importPath": ".history.sam_main_20240711215334",
+        "description": ".history.sam_main_20240711215334",
+        "peekOfCode": "def start():  # the start function of assistant\n    while True:\n        query=takecommand().lower()     # if no .lower(), it can get confused between upper case and lower case \n        if \"hello\" in query or \"hey\" in query or \"hi\" in query or \"sam\" in query:\n            speak(\"hello, how are you\")\n            main_program()\n        else:\n            start()\ndef main_program():  # the main program that works according to our queries\n    while True:                                                                 ",
+        "detail": ".history.sam_main_20240711215334",
+        "documentation": {}
+    },
+    {
+        "label": "main_program",
+        "kind": 2,
+        "importPath": ".history.sam_main_20240711215334",
+        "description": ".history.sam_main_20240711215334",
+        "peekOfCode": "def main_program():  # the main program that works according to our queries\n    while True:                                                                 \n        query=takecommand().lower()  # given up the query to perform\n        if \"tell me about you\" in query:  # intro function\n            print(about)\n            speak(about)\n        elif \"bye\" in query:   # to make the program exit or end\n            speak(\"ok, have a good day\")\n            exit()\n        elif \"wait\" in query:  # waiting function",
+        "detail": ".history.sam_main_20240711215334",
+        "documentation": {}
+    },
+    {
+        "label": "speak",
+        "kind": 2,
+        "importPath": ".history.sam_main_20240711215336",
+        "description": ".history.sam_main_20240711215336",
+        "peekOfCode": "def speak(audio):   #making a speak function to say something as desired\n    engine.say(audio)\n    engine.runAndWait()\ndef takecommand():   # function to take your queries\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2    # time for it to pause and litsen to us\n        speech.energy_threshold=250    # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)     # time for which it will listen to us and the resets after the time(in secs)",
+        "detail": ".history.sam_main_20240711215336",
+        "documentation": {}
+    },
+    {
+        "label": "takecommand",
+        "kind": 2,
+        "importPath": ".history.sam_main_20240711215336",
+        "description": ".history.sam_main_20240711215336",
+        "peekOfCode": "def takecommand():   # function to take your queries\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2    # time for it to pause and litsen to us\n        speech.energy_threshold=250    # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)     # time for which it will listen to us and the resets after the time(in secs)\n        try:     # exception handling\n            print(\"Recognising and Understanding...\")\n            query=speech.recognize_google(audio,language='en-in')  ",
+        "detail": ".history.sam_main_20240711215336",
+        "documentation": {}
+    },
+    {
+        "label": "wait",
+        "kind": 2,
+        "importPath": ".history.sam_main_20240711215336",
+        "description": ".history.sam_main_20240711215336",
+        "peekOfCode": "def wait():  # wait function\n    start() \ndef alarm(query):   # alarm function\n    timehere = open(\"Alarmtext.txt\",\"a\")\n    timehere.write(query)\n    timehere.close()\n    os.startfile(\"alarm.py\")\ndef start():  # the start function of assistant\n    while True:\n        query=takecommand().lower()     # if no .lower(), it can get confused between upper case and lower case ",
+        "detail": ".history.sam_main_20240711215336",
+        "documentation": {}
+    },
+    {
+        "label": "alarm",
+        "kind": 2,
+        "importPath": ".history.sam_main_20240711215336",
+        "description": ".history.sam_main_20240711215336",
+        "peekOfCode": "def alarm(query):   # alarm function\n    timehere = open(\"Alarmtext.txt\",\"a\")\n    timehere.write(query)\n    timehere.close()\n    os.startfile(\"alarm.py\")\ndef start():  # the start function of assistant\n    while True:\n        query=takecommand().lower()     # if no .lower(), it can get confused between upper case and lower case \n        if \"hello\" in query or \"hey\" in query or \"hi\" in query or \"sam\" in query:\n            speak(\"hello, how are you\")",
+        "detail": ".history.sam_main_20240711215336",
+        "documentation": {}
+    },
+    {
+        "label": "start",
+        "kind": 2,
+        "importPath": ".history.sam_main_20240711215336",
+        "description": ".history.sam_main_20240711215336",
+        "peekOfCode": "def start():  # the start function of assistant\n    while True:\n        query=takecommand().lower()     # if no .lower(), it can get confused between upper case and lower case \n        if \"hello\" in query or \"hey\" in query or \"hi\" in query or \"sam\" in query:\n            speak(\"hello, how are you\")\n            main_program()\n        else:\n            start()\ndef main_program():  # the main program that works according to our queries\n    while True:                                                                 ",
+        "detail": ".history.sam_main_20240711215336",
+        "documentation": {}
+    },
+    {
+        "label": "main_program",
+        "kind": 2,
+        "importPath": ".history.sam_main_20240711215336",
+        "description": ".history.sam_main_20240711215336",
+        "peekOfCode": "def main_program():  # the main program that works according to our queries\n    while True:                                                                 \n        query=takecommand().lower()  # given up the query to perform\n        if \"tell me about you\" in query:  # intro function\n            print(about)\n            speak(about)\n        elif \"bye\" in query:   # to make the program exit or end\n            speak(\"ok, have a good day\")\n            exit()\n        elif \"wait\" in query:  # waiting function",
+        "detail": ".history.sam_main_20240711215336",
         "documentation": {}
     },
     {
@@ -1197,7 +1699,7 @@
         "kind": 2,
         "importPath": "news",
         "description": "news",
-        "peekOfCode": "def speak(audio):\n    engine.say(audio)\n    engine.runAndWait()\ndef takecommand():\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2                                                         # time for it to pause and litsen to us\n        speech.energy_threshold=250                                                  # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)                                                  # time for which it will listen to us and the resets after the time(in secs)",
+        "peekOfCode": "def speak(audio):\n    engine.say(audio)\n    engine.runAndWait()\ndef takecommand():\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2     # time for it to pause and litsen to us\n        speech.energy_threshold=250   # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)     # time for which it will listen to us and the resets after the time(in secs)",
         "detail": "news",
         "documentation": {}
     },
@@ -1206,7 +1708,7 @@
         "kind": 2,
         "importPath": "news",
         "description": "news",
-        "peekOfCode": "def takecommand():\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2                                                         # time for it to pause and litsen to us\n        speech.energy_threshold=250                                                  # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)                                                  # time for which it will listen to us and the resets after the time(in secs)\n        try:                                                                             # exception handling\n            print(\"Recognising and Understanding...\")\n            query=speech.recognize_google(audio,language='en-in')  ",
+        "peekOfCode": "def takecommand():\n    speech=sr.Recognizer()\n    with sr.Microphone() as source:\n        print(\"listening...\")\n        speech.pause_threshold=2     # time for it to pause and litsen to us\n        speech.energy_threshold=250   # power of voice it hears( low->nearby voices can also be heared, high->we have to shout)\n        audio=speech.listen(source,0,5)     # time for which it will listen to us and the resets after the time(in secs)\n        try: # exception handling\n            print(\"Recognising and Understanding...\")\n            query=speech.recognize_google(audio,language='en-in')  ",
         "detail": "news",
         "documentation": {}
     },

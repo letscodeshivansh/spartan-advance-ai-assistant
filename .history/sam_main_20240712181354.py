@@ -80,7 +80,7 @@ def main_program():  # the main program that works according to our queries
         elif any(word in query for word in ["nice", "good", "excellent", "fine", "better", "happy", "marvelous"]):
             speak(" oh nice, i am also good. how may i help you?")
 
-        elif "thank" in query or "thanks" in query:
+        elif "thank" in query or "thanks" in query:  #praising function
             speak("you'r welcome")
 
         elif ".com" in query or ".co" in query or ".org" in query or ".in"  in query:  # opening the web portals
@@ -158,7 +158,7 @@ def main_program():  # the main program that works according to our queries
         else:
             pass
 
-
+# starting SAM
 start()
 
 '''

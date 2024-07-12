@@ -37,8 +37,7 @@ def takecommand():   # function to take your queries
             print("You had said:",query,"\n")     # english of India
 
         except Exception as e:
-            speak("Sorry I did'nt get what you said")
-            print("Sorry I did'nt get what you said")
+            print("Sorry I didnt get what you said")
             return "None"
 
         return query
@@ -62,14 +61,14 @@ def start():  # the start function of assistant
 
 def main_program():  # the main program that works according to our queries
     while True:                                                                 
-        query=takecommand().lower()  
+        query=takecommand().lower()  # given up the query to perform
         
         if "tell me about you" in query:  # intro function
             print(about)
             speak(about)
 
-        elif "bye" in query or "close your self" in query or "exit now" in query:   # to make the program exit or end
-            speak("ok, Take Care, Have a good day")
+        elif "bye" in query:   # to make the program exit or end
+            speak("ok, have a good day")
             exit()
 
         elif "wait" in query:  # waiting function
@@ -80,7 +79,7 @@ def main_program():  # the main program that works according to our queries
         elif any(word in query for word in ["nice", "good", "excellent", "fine", "better", "happy", "marvelous"]):
             speak(" oh nice, i am also good. how may i help you?")
 
-        elif "thank" in query or "thanks" in query:
+        elif "thank" in query or "thanks" in query:  #praising function
             speak("you'r welcome")
 
         elif ".com" in query or ".co" in query or ".org" in query or ".in"  in query:  # opening the web portals
@@ -152,13 +151,11 @@ def main_program():  # the main program that works according to our queries
             speak("reading the news")
             print("Reading the news")
             read_news() 
-        
-        elif any(word in query for word in ["fuck", "sex", "porn", "sexy", "gay", "lesbian", "sexo"]):
-            speak("Sorry bro, we are in public")
+
         else:
             pass
 
-
+# starting SAM
 start()
 
 '''

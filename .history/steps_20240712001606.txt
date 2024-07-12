@@ -100,4 +100,3 @@
   virtual ev
   python -m venv sam_env
   sam_env\Scripts\activate
- python sam_main.py

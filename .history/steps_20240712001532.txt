@@ -97,7 +97,4 @@
 8 Arrange all the things in a perfect manner and get the work done., proper speakings, texts, output
   and everything.
 
-  virtual ev
-  python -m venv sam_env
-  sam_env\Scripts\activate
- python sam_main.py
+  virtual everything

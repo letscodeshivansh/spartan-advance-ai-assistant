@@ -1,4 +1,5 @@
 This is the basic Voice Assistance project that gonna help you in your lifestyle... be connected to it :
+Need to make frontend for this project: 
 
 ## Installation 🦿
 

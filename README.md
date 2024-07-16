@@ -15,6 +15,7 @@ To install this Project, follow these steps:
 
     ```bash
     conda create -p venv python==3.12
+    conda activate venv/
     ```
 
 3. Install python libraries:

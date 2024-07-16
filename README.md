@@ -14,8 +14,7 @@ To install this Project, follow these steps:
 2. Create a Virtual Env (recommended):
 
     ```bash
-    python -m venv sam_env
-    sam_env/Scripts/activate (if using window)
+    conda create -p venv python==3.12
     ```
 
 3. Install python libraries:
@@ -27,7 +26,7 @@ To install this Project, follow these steps:
 4. Start the assistant:
 
     ```bash
-    python sam_main.py 
+    streamlit run assistant.py 
     ```
 
  4. Now, just "Hi" your virtual assistant

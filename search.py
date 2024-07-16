@@ -1,169 +1,107 @@
 import pywhatkit as pw
 import wikipedia as wk
-import pyttsx3 as pt
+from gtts import gTTS
 import speech_recognition as sr
 import webbrowser as wb
 from bs4 import BeautifulSoup
 import requests
-import datetime 
+import datetime
+import pygame
+import tempfile
 
-engine=pt.init()
-voices=engine.getProperty("voices")
-engine.setProperty("voices",voices[1].id)
-engine.setProperty("rate",200)
+# Initialize pygame mixer for audio playback
+pygame.mixer.init()
 
-                                                                                      
 def speak(audio):
-    engine.say(audio)
-    engine.runAndWait()
+    tts = gTTS(text=audio, lang='en')
+    with tempfile.NamedTemporaryFile(delete=True) as fp:
+        tts.save(fp.name + ".mp3")
+        pygame.mixer.music.load(fp.name + ".mp3")
+        pygame.mixer.music.play()
+        while pygame.mixer.music.get_busy():
+            continue
 
 def takecommand():
-    speech=sr.Recognizer()
+    speech = sr.Recognizer()
     with sr.Microphone() as source:
         print("listening...")
-        speech.pause_threshold=2                                                         
-        speech.energy_threshold=250                                                  
-        audio=speech.listen(source,0,5)                                                  
-        try:                                                                            
+        speech.pause_threshold = 2
+        speech.energy_threshold = 250
+        audio = speech.listen(source, 0, 5)
+        try:
             print("Recognising and Understanding...")
-            query=speech.recognize_google(audio,language='en-in')  
-            print("You had said:",query,"\n")                                          
-
+            query = speech.recognize_google(audio, language='en-in')
+            print("You had said:", query, "\n")
         except Exception as e:
             print("Speak Again")
             return "None"
-
         return query
-def search(query):   # google search 
-    if "google" in query:
-        query=query.replace("hey","")
-        query=query.replace("eva","")
-        query=query.replace("can you","")
-        query=query.replace("google","")
-        query=query.replace("why","")
-        query=query.replace("what","")
-        query=query.replace("when","")
-        query=query.replace("where","")
-        query=query.replace("how","")
-        query=query.replace("search","")
-        engine.say("so, i found this")
-        engine.runAndWait()
 
+def search(query):  # google search
+    if "google" in query:
+        query = query.replace("hey", "").replace("eva", "").replace("can you", "").replace("google", "").replace("why", "").replace("what", "").replace("when", "").replace("where", "").replace("how", "").replace("search", "")
+        speak("so, I found this")
         try:
             pw.search(query)
-            result=wk.summary(query,sentences=3)
-            engine.say(result)
-            engine.runAndWait()
+            result = wk.summary(query, sentences=3)
+            speak(result)
             print(result)
         except:
             print("")
-            
 
-def youtubesearch(query):  #to search anything on youtube
+def youtubesearch(query):  # to search anything on youtube
     if "youtube" in query:
-        engine.say("searching on youtube")
-        engine.runAndWait()
-        query=query.replace("hey","")   
-        query=query.replace("eva","")
-        query=query.replace("can you","")
-        query=query.replace("google","")
-        query=query.replace("search","")
-        query=query.replace("youtube","")
-        query=query.replace("video","")
-        query=query.replace("play","")
-        query=query.replace("on","")
-        web="https://www.youtube.com/results?search_query="+query    # to get searched in the search section
+        speak("searching on youtube")
+        query = query.replace("hey", "").replace("eva", "").replace("can you", "").replace("google", "").replace("search", "").replace("youtube", "").replace("video", "").replace("play", "").replace("on", "")
+        web = "https://www.youtube.com/results?search_query=" + query
         wb.open(web)
-        # pw.playonyt(query)  ->we can run this if we want to play the first video in the searched list
-        engine.say("done")
-        engine.runAndWait()
+        speak("done")
 
-def wikisearch(query):  #wikipedia
+def wikisearch(query):  # wikipedia
     if 'wikipedia' in query:
-        engine.say("searching on wikipedia")
-        engine.runAndWait()
-        query=query.replace("hey","")
-        query=query.replace("search","")
-        query=query.replace("wikipedia","")
-        query=query.replace("eva","")
+        speak("searching on wikipedia")
+        query = query.replace("hey", "").replace("search", "").replace("wikipedia", "").replace("eva", "")
         try:
-            result=wk.summary(query,sentences=5)
-            engine.say("results on wikipedia are...")
-            engine.runAndWait()
+            result = wk.summary(query, sentences=5)
+            speak("results on wikipedia are...")
             print(result)
-            engine.say(result)
-            engine.runAndWait()
+            speak(result)
         except:
             print("No page found on wikipedia")
-            engine.say("No page found on wikipedia")
-            engine.runAndWait()
+            speak("No page found on wikipedia")
 
 def tempsearch(query):  # searching for the temperature
     if "temperature" in query or "weather" in query:
-        query=query.replace("what","")
-        query=query.replace("is","")
-        link="https://www.google.com/search?q="+query
-        result=requests.get(link)
-        data=BeautifulSoup(result.text,"html.parser")
-        temp=data.find("div",class_="BNeawe").text
-        engine.say(query)
-        engine.runAndWait()
-        engine.say(temp)
-        engine.runAndWait()
+        query = query.replace("what", "").replace("is", "")
+        link = "https://www.google.com/search?q=" + query
+        result = requests.get(link)
+        data = BeautifulSoup(result.text, "html.parser")
+        temp = data.find("div", class_="BNeawe").text
+        speak(query)
+        speak(temp)
         print(temp)
+
 def timesearch(query):  # searching for the current time
     if "time" in query:
-        query=query.replace("what","")
-        query=query.replace("is","")
-        query=query.replace("the","")
-        time=datetime.datetime.now().strftime("%H:%M")
-        engine.say(time)
-        engine.runAndWait()
+        query = query.replace("what", "").replace("is", "").replace("the", "")
+        time = datetime.datetime.now().strftime("%H:%M")
+        speak(time)
         print(time)
 
-def datesearch(query):    # searching for the current time
+def datesearch(query):  # searching for the current date
     if "date" in query:
-        query=query.replace("what","")
-        query=query.replace("is","")
-        query=query.replace("the","")
-        time=datetime.datetime.now().strftime("%d:%m:%Y")
-        engine.say(time)
-        engine.runAndWait()
-        print(time)
+        query = query.replace("what", "").replace("is", "").replace("the", "")
+        date = datetime.datetime.now().strftime("%d:%m:%Y")
+        speak(date)
+        print(date)
 
-def searchwhat(query):   # google search 
+def searchwhat(query):  # google search
     if any(word in query for word in ["what", "why", "when", "where", "how", "who", "which"]):
-        query=query.replace("hey","")
-        query=query.replace("eva","")
-        query=query.replace("can you","")
-        query=query.replace("google","")
-        query=query.replace("why","")
-        query=query.replace("what","")
-        query=query.replace("when","")
-        query=query.replace("where","")
-        query=query.replace("how","")
-        query=query.replace("is","")
-        query=query.replace("search","")
-        engine.say("so, i found this")
-        engine.runAndWait()
-
+        query = query.replace("hey", "").replace("eva", "").replace("can you", "").replace("google", "").replace("why", "").replace("what", "").replace("when", "").replace("where", "").replace("how", "").replace("is", "").replace("search", "")
+        speak("so, I found this")
         try:
-            # pw.search(query)
-            result=wk.summary(query,sentences=3)
+            result = wk.summary(query, sentences=3)
             print(result)
-            engine.say(result)
-            engine.runAndWait()
-            
+            speak(result)
         except:
             print("")
-        
-        
-
-
-
-
-
-
-
-
-        

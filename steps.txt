@@ -1,4 +1,4 @@
-1 For getting speech fom program, we will use pyttsx3
+1 For getting speech fom program, we will use gtts
 
 2 To get different voices, go in the settings -> Time & language -> Speech 
     and check the installed voices
@@ -20,10 +20,6 @@
 
 7 Make some functions, 
     * We can also make these functions in another file and then import these files in the main file
-    
-    praising:
-        thanks SAM
-        thank you
     
     google:
         google national animal
@@ -94,10 +90,3 @@
     
     These are some references you can try to search for
 
-8 Arrange all the things in a perfect manner and get the work done., proper speakings, texts, output
-  and everything.
-
-  virtual ev
-  python -m venv sam_env
-  sam_env\Scripts\activate
- python sam_main.py

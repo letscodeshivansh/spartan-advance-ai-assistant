@@ -1,4 +1,4 @@
-about = "Hi, this is your virtual Assistant, how can I help you ?"
+about = "Hey, your Spartan here!"
 
 # This is the main program
 from dotenv import load_dotenv
@@ -139,8 +139,8 @@ def process_query(query):
         speak(response)
 
 # Initialize Streamlit app
-st.set_page_config(page_title="Your Assistant")
-st.header("Your Virtual Assistant")
+st.set_page_config(page_title="Spartan")
+st.header("Meet Spartan: Your Ultimate Assistant!")
 
 if st.button("Start Listening"):
     with st.spinner("Listening..."):
@@ -154,6 +154,9 @@ if st.button("Start Listening"):
 st.write(about)
 speak(about)
 
-# Run the Streamlit app
+image_path = 'assets/spartan3.png'
+st.image(image_path, caption='Mighty Assistance, Spartan Style', width=250)
+
+
 if __name__ == "__main__":
-    st.write("Press the button to start the assistant.")
+    st.write("Get Ready to Conquer Your Questions with Spartan!")

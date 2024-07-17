@@ -51,7 +51,7 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 def get_gemini_response(query):
-    response = model.generate_content(query)
+    response = model.generate_content(query + "give answer in 2 lines only")
     return response.text
 
 def process_query(query):
@@ -151,9 +151,8 @@ if st.button("Start Listening"):
         else:
             st.write("No valid input detected.")
 
-if st.button("Tell me about yourself"):
-    st.write(about)
-    speak(about)
+st.write(about)
+speak(about)
 
 # Run the Streamlit app
 if __name__ == "__main__":

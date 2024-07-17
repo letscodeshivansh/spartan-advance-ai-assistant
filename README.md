@@ -8,7 +8,7 @@ To install this Project, follow these steps:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/letscodeshivansh/virtual-voice-assistant-.git
+    git clone https://github.com/letscodeshivansh/spartan-virtual-voice-assistant.git
     ```
 
 2. Create a Virtual Env (recommended):

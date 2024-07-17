@@ -1,5 +1,4 @@
-This is the basic Voice Assistance project that gonna help you in your lifestyle... be connected to it :
-Need to make frontend for this project: 
+## "Spartan: Where Help Meets Strength!"
 
 ## Installation 🦿
 
@@ -27,7 +26,7 @@ To install this Project, follow these steps:
 4. Start the assistant:
 
     ```bash
-    streamlit run assistant.py 
+    streamlit run spartan.py 
     ```
 
- 4. Now, just "Hi" your virtual assistant
+ 4. Now, just "Hi" your spartan.

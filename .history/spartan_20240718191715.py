@@ -167,7 +167,7 @@ if st.button("Submit Query"):
             response = get_gemini_response(text_query)
             if response: 
                 speak(response)
-                st.write(response)
+                st
             else: 
                 st.write("Response Generated")
             # speak(response)

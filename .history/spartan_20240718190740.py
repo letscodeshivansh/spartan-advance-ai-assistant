@@ -135,7 +135,7 @@ def get_gemini_response(query):
         speak("Reading the news")
         print("Reading the news")
         read_news()
-    else:
+    else
         response = model.generate_content(query + "give answer in 2 lines only")
         return response.text
      
@@ -165,29 +165,18 @@ if st.button("Submit Query"):
     if text_query:
         with st.spinner("Wait..."):
             response = get_gemini_response(text_query)
-            if response: 
-                speak(response)
-                st.write(response)
-            else: 
-                st.write("Response Generated")
-            # speak(response)
-            # st.subheader("Response: ")
-            # for word in response:
-            #     st.write(word.text)
+            speak(response)
+            st.subheader("Response: ")
+            for word in response:
+                st.write(word.text)
             # st.write(response)
     else:
         st.write("No input provided.")
 
 # Group the buttons and responses in an expander for better formatting
-with st.expander("Response: "):
+with st.expander("Assistant Response"):
     if text_query:
-        response = get_gemini_response(text_query)
-        if response:
-            st.write(response)
-        else:
-            st.write("Response Generated")
-    else:
-        st.write("No query provided.")
+        st.write(chunk.text)
         
     
 # st.write(about)

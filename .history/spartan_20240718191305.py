@@ -167,7 +167,8 @@ if st.button("Submit Query"):
             response = get_gemini_response(text_query)
             if response: 
                 speak(response)
-                st.write(response)
+                for word in response:
+                    st.write(word)
             else: 
                 st.write("Response Generated")
             # speak(response)
@@ -179,15 +180,10 @@ if st.button("Submit Query"):
         st.write("No input provided.")
 
 # Group the buttons and responses in an expander for better formatting
-with st.expander("Response: "):
+with st.expander("Your Response"):
     if text_query:
-        response = get_gemini_response(text_query)
-        if response:
-            st.write(response)
-        else:
-            st.write("Response Generated")
-    else:
-        st.write("No query provided.")
+        if response: 
+        st.write(response)
         
     
 # st.write(about)

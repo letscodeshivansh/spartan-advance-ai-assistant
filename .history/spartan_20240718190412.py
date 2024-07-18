@@ -51,6 +51,7 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 def get_gemini_response(query):
+    response = model.generate_content(query + "give answer in 2 lines only")
     
     if "bye" in query or "close your self" in query or "exit now" in query:  
         speak("Ok, Take Care, Have a good day")
@@ -72,73 +73,43 @@ def get_gemini_response(query):
         pg.typewrite(query)
         pg.sleep(2)
         pg.press("enter")
-        return
      
-    elif "google" in query:   # to search on google
-        search(query)
-        return 
+    
 
-    elif "time" in query:   # to get the current time
-        timesearch(query)
-        return
+    
+    
+    
+    
+    return response.text
 
-    elif "date" in query:  # to get the today's date
-        datesearch(query)
-        return
+def process_query(query):
+    if "bye" in query or "close your self" in query or "exit now" in query:  
+        speak("Ok, Take Care, Have a good day")
+        exit()
 
-    elif "youtube" in query:  # to search anything on youtube
-        youtubesearch(query)
-        return
+    elif "wait" in query:  # waiting function
+        speak("Going to the wait mode, to return back, speak hello")
+        print("Going to the wait mode, to return back, speak hello")
+        wait()
+            
+    elif ".com" in query or ".co" in query or ".org" in query or ".in"  in query:  # opening the web portals
+        openwebapp(query)
 
-    elif "play" in query or "pause" in query:  # play/pause the video on youtube
-        speak("Okay")
-        pg.press("k")
-        return 
+    elif "close" in query:  # closing 1 tab
+        closewebapp(query)
 
-    elif "mute video" in query:  # mute up the youtube video
-        speak("Okay")
-        pg.press("n")
-        return
+    elif "open" in query:  # opens any app
+        query = query.replace("open", "")
+        pg.press("super")
+        pg.typewrite(query)
+        pg.sleep(2)
+        pg.press("enter")
 
-    elif "volume" in query:  # increase/decrease the volume
-        if "up" in query or "increase" in query:
-            speak("Increasing volume")
-            volume_up()
-        elif "down" in query or "decrease" in query:
-            speak("Decreasing volume")
-            volume_down()
-        else:
-            pass
-
-    elif "wikipedia" in query:  # search on wikipedia
-        wikisearch(query)
-        return
-
-    elif "temperature" in query or "weather" in query:  # search the current weather
-        tempsearch(query)
-        return
-
-    elif "alarm" in query:  # setting up the alarm
-        alarm_time = input("Enter the time for the alarm (HH:MM *24 hour format): ")
-        speak("Enter the time for the alarm ")
-        sound_file = "alarmtone.wav"  
-        speak(f"Alarm is set for {alarm_time}")
-        # Run the alarm function in a separate thread
-        alarm_thread = threading.Thread(target=set_alarm, args=(alarm_time, sound_file))
-        alarm_thread.daemon = True  # Set as daemon thread so it exits when main program exits
-        alarm_thread.start()
-        print("If you close the program, the alarm would not ring then")
-        speak("If you close the program, the alarm would not ring then")
-        main_program()     # Run the main program
-
-    elif "news" in query:  # getting latest news
-        speak("Reading the news")
-        print("Reading the news")
-        read_news()
+    
+            
     else:
-        response = model.generate_content(query + "give answer in 2 lines only")
-        return response.text
-     
+        response = get_gemini_response(query)
+        speak(response)
 
 # Initialize Streamlit app
 st.set_page_config(page_title="Spartan")
@@ -149,7 +120,7 @@ st.image(image_path, caption='Mighty Assistance, Spartan Style', width=250)
 
 
 # Start Listening button
-if st.button("🎤"):
+if st.button("🔊"):
     with st.spinner("Listening..."):
         query = takecommand()
         if query:
@@ -165,29 +136,18 @@ if st.button("Submit Query"):
     if text_query:
         with st.spinner("Wait..."):
             response = get_gemini_response(text_query)
-            if response: 
-                speak(response)
-                st.write(response)
-            else: 
-                st.write("Response Generated")
-            # speak(response)
-            # st.subheader("Response: ")
-            # for word in response:
-            #     st.write(word.text)
+            speak(response)
+            st.subheader("Response: ")
+            for word in response:
+                st.write(word.text)
             # st.write(response)
     else:
         st.write("No input provided.")
 
 # Group the buttons and responses in an expander for better formatting
-with st.expander("Response: "):
+with st.expander("Assistant Response"):
     if text_query:
-        response = get_gemini_response(text_query)
-        if response:
-            st.write(response)
-        else:
-            st.write("Response Generated")
-    else:
-        st.write("No query provided.")
+        st.write(chunk.text)
         
     
 # st.write(about)
@@ -195,13 +155,6 @@ with st.expander("Response: "):
 
 if __name__ == "__main__":
     st.write("Get Ready to Conquer Your Questions with Spartan!")
-
-
-    
-    
-    
-    
-    
 
 
 

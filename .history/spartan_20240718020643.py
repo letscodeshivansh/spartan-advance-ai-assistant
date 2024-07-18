@@ -86,6 +86,9 @@ def process_query(query):
     elif "date" in query:  # to get the today's date
         datesearch(query)
 
+    elif any(word in query for word in ["what", "why", "when", "where", "how", "who", "which"]):
+        searchwhat(query)
+
     elif "youtube" in query:  # to search anything on youtube
         youtubesearch(query)
 

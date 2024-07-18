@@ -1,4 +1,6 @@
 ## "Spartan: Where Help Meets Strength!"
+<img src="https://github.com/user-attachments/assets/dddfdfb2-73a7-4a70-a660-64380f880018" alt="file" width="180"/>
+
 
 ## Installation 🦿
 

@@ -1,0 +1,14 @@
+beautifulsoup4
+pandas
+pyaudio
+pyttsx3
+pynput
+pywhatkit
+requests
+speechrecognition
+wikipedia
+streamlit 
+google-generativeai 
+python-dotenv
+pygame 
+pyautogui

@@ -10,3 +10,6 @@ wikipedia
 streamlit 
 google-generativeai 
 python-dotenv
+pygame 
+pyautogui
+SpeechRecognition

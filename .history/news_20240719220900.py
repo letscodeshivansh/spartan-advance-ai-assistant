@@ -51,7 +51,6 @@ def get_news():
 def read_news():
     news_list = get_news()
     speak("Here are the top news headlines")
-    st.write("Here are the top news headlines")
     for news in news_list:
-        st.write(news)
-    
+        print(news)
+        speak(news)

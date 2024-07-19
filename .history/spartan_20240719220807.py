@@ -131,7 +131,8 @@ def get_gemini_response(query):
         speak("If you close the program, the alarm would not ring then")
         main_program()     # Run the main program
 
-    elif "news" in query: 
+    elif "news" in query:  # getting latest news
+        speak("Reading the news")
         read_news()
     else:
         response = model.generate_content(query + "give answer in 2 lines only")

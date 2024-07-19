@@ -53,5 +53,5 @@ def read_news():
     speak("Here are the top news headlines")
     st.write("Here are the top news headlines")
     for news in news_list:
-        st.write(news)
+        st.writt(news)
     

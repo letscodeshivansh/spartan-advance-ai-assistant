@@ -174,14 +174,12 @@ if api_key:
         st.subheader("Here's Your Answer:")
         if response:
             st.write(response)
-            if isinstance(response, str):
-                st.session_state['chat_history'].append(("Bot: ", response))
-            else:
-                for chunk in response:
-                    st.write(chunk)
-                    st.session_state['chat_history'].append(("Bot: ", chunk))
+        if isinstance(response, str):
+            st.session_state['chat_history'].append(("Bot: ", response))
         else:
-            st.write("Response Generated")
+            for chunk in response:
+                st.write(chunk)
+                st.session_state['chat_history'].append(("Bot: ", chunk))
     with st.expander("Chat History"):
         for role, text in st.session_state['chat_history']:
             st.write(f"{role} {text}")

@@ -140,6 +140,9 @@ def get_gemini_response(query):
         return response.text
 
 
+import streamlit as st
+import google.generativeai as genai
+
 # Initialize Streamlit app
 st.set_page_config(page_title="Spartan")
 st.header("Meet Spartan: Your Ultimate Assistant!")
@@ -164,24 +167,29 @@ if api_key:
     if 'chat_history' not in st.session_state:
         st.session_state['chat_history'] = []
 
+    # Start Listening button
+    if st.button("🎤"):
+        with st.spinner("Listening..."):
+            query = takecommand()  # Ensure this function is defined elsewhere
+            if query:
+                response = get_gemini_response(query)  # Ensure this function is defined elsewhere
+                st.write(response if response else "No valid response.")
+            else:
+                st.write("No valid input detected.")
+
     # Text input for users who prefer typing
-    text_query = st.text_input("Enter Your Query:")
+    text_query = st.text_input("Or type your query here:")
     submit = st.button("Ask")
 
     if submit and text_query:
         response = get_gemini_response(text_query)  # Ensure this function is defined elsewhere
         st.session_state['chat_history'].append(("You: ", text_query))
-        st.subheader("Here's Your Answer:")
-        if response:
-            st.write(response)
-            if isinstance(response, str):
-                st.session_state['chat_history'].append(("Bot: ", response))
-            else:
-                for chunk in response:
-                    st.write(chunk)
-                    st.session_state['chat_history'].append(("Bot: ", chunk))
+        if isinstance(response, str):
+            st.session_state['chat_history'].append(("Bot: ", response))
         else:
-            st.write("Response Generated")
+            for chunk in response:
+                st.write(chunk)
+                st.session_state['chat_history'].append(("Bot: ", chunk))
     with st.expander("Chat History"):
         for role, text in st.session_state['chat_history']:
             st.write(f"{role} {text}")

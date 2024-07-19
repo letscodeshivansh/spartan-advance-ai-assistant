@@ -138,7 +138,9 @@ def get_gemini_response(query):
     else:
         response = model.generate_content(query + "give answer in 2 lines only")
         return response.text
-
+     
+import streamlit as st
+import google.generativeai as genai
 
 # Initialize Streamlit app
 st.set_page_config(page_title="Spartan")
@@ -164,30 +166,34 @@ if api_key:
     if 'chat_history' not in st.session_state:
         st.session_state['chat_history'] = []
 
+    # Start Listening button
+    if st.button("🎤"):
+        with st.spinner("Listening..."):
+            query = takecommand()  # Ensure this function is defined elsewhere
+            if query:
+                response = get_gemini_response(query)  # Ensure this function is defined elsewhere
+                st.write(response if response else "No valid response.")
+            else:
+                st.write("No valid input detected.")
+
     # Text input for users who prefer typing
-    text_query = st.text_input("Enter Your Query:")
+    text_query = st.text_input("Or type your query here:")
     submit = st.button("Ask")
 
     if submit and text_query:
         response = get_gemini_response(text_query)  # Ensure this function is defined elsewhere
         st.session_state['chat_history'].append(("You: ", text_query))
-        st.subheader("Here's Your Answer:")
-        if response:
-            st.write(response)
-            if isinstance(response, str):
-                st.session_state['chat_history'].append(("Bot: ", response))
-            else:
-                for chunk in response:
-                    st.write(chunk)
-                    st.session_state['chat_history'].append(("Bot: ", chunk))
-        else:
-            st.write("Response Generated")
-    with st.expander("Chat History"):
-        for role, text in st.session_state['chat_history']:
-            st.write(f"{role} {text}")
+        st.subheader("Response: ")
+        for chunk in response:
+            st.write(chunk.text)
+            st.session_state['chat_history'].append(("Bot: ", chunk.text))
 
+    st.subheader("Chat History: ")
+    for role, text in st.session_state['chat_history']:
+        st.write(f"{role}{text}")
 else:
     st.stop()
 
 if __name__ == "__main__":
     st.write("Get Ready to Conquer Your Questions with Spartan!")
+

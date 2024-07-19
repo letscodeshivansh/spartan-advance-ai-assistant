@@ -180,8 +180,6 @@ if api_key:
                 for chunk in response:
                     st.write(chunk)
                     st.session_state['chat_history'].append(("Bot: ", chunk))
-        else:
-            st.write("Response Generated")
     with st.expander("Chat History"):
         for role, text in st.session_state['chat_history']:
             st.write(f"{role} {text}")

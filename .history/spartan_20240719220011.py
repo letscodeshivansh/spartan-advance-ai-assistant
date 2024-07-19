@@ -172,16 +172,8 @@ if api_key:
         response = get_gemini_response(text_query)  # Ensure this function is defined elsewhere
         st.session_state['chat_history'].append(("You: ", text_query))
         st.subheader("Here's Your Answer:")
-        if response:
-            st.write(response)
-            if isinstance(response, str):
-                st.session_state['chat_history'].append(("Bot: ", response))
-            else:
-                for chunk in response:
-                    st.write(chunk)
-                    st.session_state['chat_history'].append(("Bot: ", chunk))
-        else:
-            st.write("Response Generated")
+        
+
     with st.expander("Chat History"):
         for role, text in st.session_state['chat_history']:
             st.write(f"{role} {text}")

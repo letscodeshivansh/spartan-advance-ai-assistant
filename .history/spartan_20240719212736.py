@@ -138,8 +138,7 @@ def get_gemini_response(query):
     else:
         response = model.generate_content(query + "give answer in 2 lines only")
         return response.text
-
-
+     
 # Initialize Streamlit app
 st.set_page_config(page_title="Spartan")
 st.header("Meet Spartan: Your Ultimate Assistant!")
@@ -151,43 +150,47 @@ st.image(image_path, caption='Mighty Assistance, Spartan Style', width=250)
 api_key = st.text_input("Enter your personal API key:")
 submit_api = st.button("Submit Key")
 
-if submit_api and not api_key:
-    st.warning("Please enter your personal API key to proceed.")
+if not api_key:
     st.stop()
 
-if api_key:
-    # Initialize generative AI model
-    genai.configure(api_key=api_key)
-    model = genai.GenerativeModel("gemini-1.5-flash")
+# Initialize generative AI model
+genai.configure(api_key=api_key)
+model = genai.GenerativeModel("gemini-1.5-flash")
 
-    chat = model.start_chat(history=[])
-    if 'chat_history' not in st.session_state:
-        st.session_state['chat_history'] = []
+chat = model.start_chat(history = [])
+if 'chat_history' not in st.session_state:
+    st.session_state['chat_history'] = []
+    
+# Start Listening button
+if st.button("🎤"):
+    with st.spinner("Listening..."):
+        query = takecommand()
+        if query:
+            response = get_gemini_response(query)
+            st.write(response if response else "No valid response.")
+        else:
+            st.write("No valid input detected.")
+            
+text_query = st.text_input("Or type your query here:")
 
-    # Text input for users who prefer typing
-    text_query = st.text_input("Enter Your Query:")
-    submit = st.button("Ask")
+if st.button("Submit Query"):
+    response = get_gemini_response(text_query)
+    st.session_state['chat_history'].append(("You: ", input))
+    st.subheader("Response: ")
+    for chunk in response:
+        st.write(chunk.text)
+        st.session_state['chat_history'].append(("Bot: ", response))
 
-    if submit and text_query:
-        response = get_gemini_response(text_query)  # Ensure this function is defined elsewhere
-        st.session_state['chat_history'].append(("You: ", text_query))
-        st.subheader("Here's Your Answer:")
+# Group the buttons and responses in an expander for better formatting
+with st.expander("Response:"):
+    if text_query:
+        response = get_gemini_response(text_query)
         if response:
             st.write(response)
-            if isinstance(response, str):
-                st.session_state['chat_history'].append(("Bot: ", response))
-            else:
-                for chunk in response:
-                    st.write(chunk)
-                    st.session_state['chat_history'].append(("Bot: ", chunk))
         else:
-            st.write("Response Generated")
-    with st.expander("Chat History"):
-        for role, text in st.session_state['chat_history']:
-            st.write(f"{role} {text}")
-
-else:
-    st.stop()
+            st.write("No valid response.")
+    else:
+        st.write("No query provided.")
 
 if __name__ == "__main__":
     st.write("Get Ready to Conquer Your Questions with Spartan!")

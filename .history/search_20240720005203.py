@@ -21,6 +21,7 @@ def speak(audio):
         while pygame.mixer.music.get_busy():
             continue
 
+
 def search(query):  # google search
     if "google" in query:
         query = query.replace("hey", "").replace("eva", "").replace("can you", "").replace("google", "").replace("why", "").replace("what", "").replace("when", "").replace("where", "").replace("how", "").replace("search", "")

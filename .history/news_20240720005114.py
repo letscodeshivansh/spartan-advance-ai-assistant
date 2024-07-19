@@ -18,25 +18,6 @@ def speak(audio):
         while pygame.mixer.music.get_busy():
             continue
 
-# def takecommand():
-#     duration = 5  # seconds
-#     fs = 44100  # sample rate
-#     speech = sr.Recognizer()
-
-#     print("Listening...")
-#     myrecording = sd.rec(int(duration * fs), samplerate=fs, channels=1)
-#     sd.wait()  # Wait until recording is finished
-
-#     # Convert the recording to a format that SpeechRecognition can process
-#     audio_data = np.int16(myrecording * 32767).tobytes()
-#     audio = sr.AudioData(audio_data, fs, 1)
-
-#     try:
-#         query = speech.recognize_google(audio, language='en-in')
-#         return query.lower()
-#     except Exception:
-#         speak("Speak Again!")
-#         return None
 
 def get_news():
     url = 'https://news.google.com/rss'

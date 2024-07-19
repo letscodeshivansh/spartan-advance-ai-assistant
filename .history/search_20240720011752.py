@@ -5,7 +5,6 @@ import requests
 import pygame
 from bs4 import BeautifulSoup
 from gtts import gTTS
-import speech_recognition as sr
 import webbrowser as wb
 
 # Initialize pygame mixer for audio playback
@@ -25,14 +24,12 @@ def search(query):  # Google search
         query = query.replace("hey", "").replace("eva", "").replace("can you", "").replace("google", "").replace("why", "").replace("what", "").replace("when", "").replace("where", "").replace("how", "").replace("search", "")
         speak("so, I found this")
         try:
-            import pywhatkit as pw
-            result = pw.search(query)
             import wikipedia as wk
             summary = wk.summary(query, sentences=3)
             speak(summary)
             print(summary)
         except ImportError as e:
-            print(f"Error importing modules: {e}")
+            print(f"Error importing Wikipedia module: {e}")
         except Exception as e:
             print(f"An error occurred: {e}")
 

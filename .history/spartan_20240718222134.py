@@ -143,54 +143,73 @@ def get_gemini_response(query):
 st.set_page_config(page_title="Spartan")
 st.header("Meet Spartan: Your Ultimate Assistant!")
 
-image_path = 'assets/spartan3.png'
-st.image(image_path, caption='Mighty Assistance, Spartan Style', width=250)
+# Function to initialize generative AI model
+def initialize_genai(api_key):
+    genai.configure(api_key=api_key)
+    return genai.GenerativeModel("gemini-1.5-flash")
 
-# Ask for personal API key
-api_key = st.text_input("Enter your personal API key:")
-submit_api = st.button("Submit Key")
+# State variables
+api_key = None
+api_key_entered = False
 
-if not api_key:
-    st.stop()
+# Input for API key
 
-# Initialize generative AI model
-genai.configure(api_key=api_key)
-model = genai.GenerativeModel("gemini-1.5-flash")
+if not api_key_entered:
+    api_key = api_key_input.text_input("Enter your personal API key:")
+    submit_api = api_key_input.button("Submit Key")
+else:
+    api_key_input.empty()  # Clear the API key input section if already submitted
 
-# Start Listening button
-if st.button("🎤"):
-    with st.spinner("Listening..."):
-        query = takecommand()
-        if query:
-            response = get_gemini_response(query)
-            st.write(response if response else "No valid response.")
-        else:
-            st.write("No valid input detected.")
+# Handle API key submission
+if submit_api:
+    if not api_key:
+        st.warning("Please enter your personal API key to proceed.")
+    else:
+        api_key_entered = True
+        # Initialize the generative AI model
+        model = initialize_genai(api_key)
+
+# Main application functionality
+if api_key_entered:
+    # Start Listening button
+    if st.button("🎤"):
+        with st.spinner("Listening..."):
+            query = takecommand()  # Assume `takecommand()` is defined elsewhere
+            if query:
+                response = get_gemini_response(query)  # Assume `get_gemini_response()` is defined elsewhere
+                st.write(response if response else "No valid response.")
+            else:
+                st.write("No valid input detected.")
             
-text_query = st.text_input("Or type your query here:")
+    # Text input for users who prefer typing
+    text_query = st.text_input("Or type your query here:")
 
-if st.button("Submit Query"):
-    if text_query:
-        with st.spinner("Wait..."):
-            response = get_gemini_response(text_query)
-        if response:
-            speak(response)
-            st.write(response)
+    if st.button("Submit Query"):
+        if text_query:
+            with st.spinner("Wait..."):
+                response = get_gemini_response(text_query)  # Assume `get_gemini_response()` is defined elsewhere
+                if response:
+                    speak(response)  # Assume `speak()` is defined elsewhere
+                    st.write(response)
+                else:
+                    st.write("No valid response.")
         else:
-            st.write("No valid response.")
-    else:
-        st.write("No input provided.")
+            st.write("No input provided.")
 
-# Group the buttons and responses in an expander for better formatting
-with st.expander("Response:"):
-    if text_query:
-        response = get_gemini_response(text_query)
-        if response:
-            st.write(response)
+    # Group the buttons and responses in an expander for better formatting
+    with st.expander("Response:"):
+        if text_query:
+            response = get_gemini_response(text_query)  # Assume `get_gemini_response()` is defined elsewhere
+            if response:
+                st.write(response)
+            else:
+                st.write("No valid response.")
         else:
-            st.write("No valid response.")
-    else:
-        st.write("No query provided.")
+            st.write("No query provided.")
+
+# Display a message if API key input is empty initially
+if not api_key_entered and not submit_api:
+    st.warning("Please enter your personal API key.")
 
 if __name__ == "__main__":
     st.write("Get Ready to Conquer Your Questions with Spartan!")

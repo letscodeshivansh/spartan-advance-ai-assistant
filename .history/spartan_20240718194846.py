@@ -17,6 +17,7 @@ from volume_settings import *
 from news import *
 import tempfile
 import pygame
+import pyttsx3 as pt
 
 # Load the environment variables
 load_dotenv()
@@ -39,13 +40,19 @@ def takecommand():
     with sr.Microphone() as source:
         speech.pause_threshold = 2
         speech.energy_threshold = 250
-        audio = speech.listen(source, 0, 5)
         try:
+            audio = speech.listen(source, timeout=40, phrase_time_limit=40)
             query = speech.recognize_google(audio, language='en-in')
             return query.lower()
-        except Exception:
-            speak("Speak Again!")
-            return None
+        except sr.WaitTimeoutError:
+            speak("Listening timed out")
+        except sr.RequestError:
+            speak("API unavailable")
+        except sr.UnknownValueError:
+            speak("Unable to recognize speech")
+        except Exception as e:
+            speak(f"An error occurred: {e}")
+        return None
 
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 model = genai.GenerativeModel("gemini-1.5-flash")
@@ -139,6 +146,7 @@ def get_gemini_response(query):
         response = model.generate_content(query + "give answer in 2 lines only")
         return response.text
      
+
 # Initialize Streamlit app
 st.set_page_config(page_title="Spartan")
 st.header("Meet Spartan: Your Ultimate Assistant!")
@@ -146,16 +154,6 @@ st.header("Meet Spartan: Your Ultimate Assistant!")
 image_path = 'assets/spartan3.png'
 st.image(image_path, caption='Mighty Assistance, Spartan Style', width=250)
 
-# Ask for personal API key
-api_key = st.text_input("Enter your personal API key:")
-submit_api = st.button("Submit Key")
-
-if not api_key:
-    st.stop()
-
-# Initialize generative AI model
-genai.configure(api_key=api_key)
-model = genai.GenerativeModel("gemini-1.5-flash")
 
 # Start Listening button
 if st.button("🎤"):
@@ -163,34 +161,51 @@ if st.button("🎤"):
         query = takecommand()
         if query:
             response = get_gemini_response(query)
-            st.write(response if response else "No valid response.")
+            st.write(response)
         else:
             st.write("No valid input detected.")
             
+# Text input for users who prefer typing
 text_query = st.text_input("Or type your query here:")
 
 if st.button("Submit Query"):
     if text_query:
         with st.spinner("Wait..."):
             response = get_gemini_response(text_query)
-        if response:
+        if response: 
             speak(response)
             st.write(response)
-        else:
-            st.write("No valid response.")
+        else: 
+            st.write("Response Generated")
+            
     else:
         st.write("No input provided.")
 
 # Group the buttons and responses in an expander for better formatting
-with st.expander("Response:"):
+with st.expander("Response: "):
     if text_query:
         response = get_gemini_response(text_query)
         if response:
             st.write(response)
         else:
-            st.write("No valid response.")
+            st.write("Response Generated")
     else:
         st.write("No query provided.")
+        
+    
+# st.write(about)
+# speak(about)
 
 if __name__ == "__main__":
     st.write("Get Ready to Conquer Your Questions with Spartan!")
+
+
+    
+    
+    
+    
+    
+
+
+
+

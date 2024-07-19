@@ -143,54 +143,64 @@ def get_gemini_response(query):
 st.set_page_config(page_title="Spartan")
 st.header("Meet Spartan: Your Ultimate Assistant!")
 
-image_path = 'assets/spartan3.png'
-st.image(image_path, caption='Mighty Assistance, Spartan Style', width=250)
+# Function to initialize generative AI model
+def initialize_genai(api_key):
+    genai.configure(api_key=api_key)
+    return genai.GenerativeModel("gemini-1.5-flash")
 
-# Ask for personal API key
-api_key = st.text_input("Enter your personal API key:")
-submit_api = st.button("Submit Key")
+# Input for API key
+api_key_input = st.empty()
+api_key = api_key_input.text_input("Enter your personal API key:")
+submit_api = api_key_input.button("Submit Key")
 
-if not api_key:
-    st.stop()
-
-# Initialize generative AI model
-genai.configure(api_key=api_key)
-model = genai.GenerativeModel("gemini-1.5-flash")
-
-# Start Listening button
-if st.button("🎤"):
-    with st.spinner("Listening..."):
-        query = takecommand()
-        if query:
-            response = get_gemini_response(query)
-            st.write(response if response else "No valid response.")
-        else:
-            st.write("No valid input detected.")
-            
-text_query = st.text_input("Or type your query here:")
-
-if st.button("Submit Query"):
-    if text_query:
-        with st.spinner("Wait..."):
-            response = get_gemini_response(text_query)
-        if response:
-            speak(response)
-            st.write(response)
-        else:
-            st.write("No valid response.")
+# Hide API input when submitted
+if submit_api:
+    if not api_key:
+        st.warning("Please enter your personal API key to proceed.")
     else:
-        st.write("No input provided.")
+        # Initialize the generative AI model
+        model = initialize_genai(api_key)
+        api_key_input.empty()  # Clear the API input section
 
-# Group the buttons and responses in an expander for better formatting
-with st.expander("Response:"):
-    if text_query:
-        response = get_gemini_response(text_query)
-        if response:
-            st.write(response)
-        else:
-            st.write("No valid response.")
-    else:
-        st.write("No query provided.")
+        # Start Listening button
+        if st.button("🎤"):
+            with st.spinner("Listening..."):
+                query = takecommand()
+                if query:
+                    response = get_gemini_response(query)
+                    st.write(response if response else "No valid response.")
+                else:
+                    st.write("No valid input detected.")
+                
+        # Text input for users who prefer typing
+        text_query = st.text_input("Or type your query here:")
+
+        if st.button("Submit Query"):
+            if text_query:
+                with st.spinner("Wait..."):
+                    response = get_gemini_response(text_query)
+                    if response:
+                        speak(response)
+                        st.write(response)
+                    else:
+                        st.write("No valid response.")
+            else:
+                st.write("No input provided.")
+
+        # Group the buttons and responses in an expander for better formatting
+        with st.expander("Response:"):
+            if text_query:
+                response = get_gemini_response(text_query)
+                if response:
+                    st.write(response)
+                else:
+                    st.write("No valid response.")
+            else:
+                st.write("No query provided.")
+
+# Display a message if API key input is empty initially
+if not submit_api and not api_key:
+    st.warning("Please enter your personal API key.")
 
 if __name__ == "__main__":
     st.write("Get Ready to Conquer Your Questions with Spartan!")

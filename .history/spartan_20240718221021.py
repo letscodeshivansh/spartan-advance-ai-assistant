@@ -143,14 +143,11 @@ def get_gemini_response(query):
 st.set_page_config(page_title="Spartan")
 st.header("Meet Spartan: Your Ultimate Assistant!")
 
-image_path = 'assets/spartan3.png'
-st.image(image_path, caption='Mighty Assistance, Spartan Style', width=250)
-
 # Ask for personal API key
 api_key = st.text_input("Enter your personal API key:")
-submit_api = st.button("Submit Key")
-
+submit_api = st.button("Submi")
 if not api_key:
+    st.warning("Please enter your personal API key to proceed.")
     st.stop()
 
 # Initialize generative AI model
@@ -167,6 +164,7 @@ if st.button("🎤"):
         else:
             st.write("No valid input detected.")
             
+# Text input for users who prefer typing
 text_query = st.text_input("Or type your query here:")
 
 if st.button("Submit Query"):

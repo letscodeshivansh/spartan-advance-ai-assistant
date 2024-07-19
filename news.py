@@ -24,12 +24,12 @@ def takecommand():
     speech = sr.Recognizer()
 
     print("Listening...")
-    myrecording = sd.rec(int(duration * fs), samplerate=fs, channels=2)
+    myrecording = sd.rec(int(duration * fs), samplerate=fs, channels=1)
     sd.wait()  # Wait until recording is finished
 
     # Convert the recording to a format that SpeechRecognition can process
-    audio_data = np.int16(myrecording * 32767)
-    audio = sr.AudioData(audio_data.tobytes(), fs, 2)
+    audio_data = np.int16(myrecording * 32767).tobytes()
+    audio = sr.AudioData(audio_data, fs, 1)
 
     try:
         query = speech.recognize_google(audio, language='en-in')

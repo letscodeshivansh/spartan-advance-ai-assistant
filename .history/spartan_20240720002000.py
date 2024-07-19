@@ -17,7 +17,7 @@ from volume_settings import *
 from news import *
 import tempfile
 import pygame
-import sounddevice as sd
+
 # Load the environment variables
 load_dotenv()
 

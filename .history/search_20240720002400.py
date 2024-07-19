@@ -8,7 +8,7 @@ import requests
 import datetime
 import pygame
 import tempfile
-import sounddevice as sd
+
 # Initialize pygame mixer for audio playback
 pygame.mixer.init()
 

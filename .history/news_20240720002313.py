@@ -8,7 +8,7 @@ import warnings
 import streamlit as st
 # Initialize pygame mixer for audio playback
 pygame.mixer.init()
-import sounddevice as sd
+
 def speak(audio):
     tts = gTTS(text=audio, lang='en')
     with tempfile.NamedTemporaryFile(delete=True) as fp:

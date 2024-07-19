@@ -5,8 +5,8 @@ import threading
 from gtts import gTTS
 import pygame
 import tempfile
-
-# Initialize pygame mixer for audio playback
+from playsound import playsound
+import sounddevice as sd
 pygame.mixer.init()
 
 def speak(audio):

@@ -12,8 +12,8 @@ from volume_settings import *
 from news import *
 import tempfile
 import pygame
-
-# Load the environment variables
+from playsound import playsound
+import sounddevice as sd
 load_dotenv()
 
 # Initialize pygame mixer for audio playback

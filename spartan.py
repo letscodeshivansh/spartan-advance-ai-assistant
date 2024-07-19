@@ -119,22 +119,20 @@ def get_gemini_response(query):
         return
 
     elif "alarm" in query:  # setting up the alarm
-        alarm_time = input("Enter the time for the alarm (HH:MM *24 hour format): ")
-        speak("Enter the time for the alarm ")
-        sound_file = "alarmtone.wav"  
-        speak(f"Alarm is set for {alarm_time}")
-        # Run the alarm function in a separate thread
-        alarm_thread = threading.Thread(target=set_alarm, args=(alarm_time, sound_file))
-        alarm_thread.daemon = True  # Set as daemon thread so it exits when main program exits
-        alarm_thread.start()
-        print("If you close the program, the alarm would not ring then")
-        speak("If you close the program, the alarm would not ring then")
-        main_program()     # Run the main program
-
+        alarm_time = st.text_input("Enter the time for the alarm (HH:MM *24 hour format): ")
+        if alarm_time:
+            speak("Enter the time for the alarm")
+        submit_time = st.button("Set Alarm")
+        if submit_time and alarm_time:
+            st.write(f"Alarm is being set on {alarm_time}")
+            sound_file = "alarmtone.wav"  
+            alarm_thread = threading.Thread(target=set_alarm, args=(alarm_time, sound_file))
+            alarm_thread.daemon = True  # Set as daemon thread so it exits when main program exits
+            alarm_thread.start()
     elif "news" in query: 
         read_news()
     else:
-        response = model.generate_content(query + "give answer in 2 lines only")
+        response = model.generate_content(query + "give answer briefly")
         return response.text
 
 

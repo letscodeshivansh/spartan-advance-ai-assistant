@@ -79,7 +79,6 @@ def tempsearch(query):  # searching for the temperature
         temp = data.find("div", class_="BNeawe").text
         speak(query)
         speak(temp)
-        print(temp)
 
 def timesearch(query):  # searching for the current time
     if "time" in query:

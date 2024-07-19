@@ -22,7 +22,6 @@ def set_alarm(alarm_time, sound_file):
     alarm_hour, alarm_minute = map(int, alarm_time.split(":"))
 
     print("Alarm is set for {}:{}".format(alarm_hour, alarm_minute))
-    speak("Alarm is set for {}:{}".format(alarm_hour, alarm_minute))
 
     while True:
         now = datetime.datetime.now()

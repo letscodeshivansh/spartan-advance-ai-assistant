@@ -20,10 +20,4 @@ def get_news():
     for headline in headlines:
         news_list.append(headline.title.text)
     return news_list
-
-# def read_news():
-#     news_list = get_news()
-#     speak("Here are the top news headlines")
-#     for news in news_list:
-#         print(news)
-#         speak(news)
+         

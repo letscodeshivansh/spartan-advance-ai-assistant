@@ -9,6 +9,7 @@ import threading
 from search import search, youtubesearch, wikisearch, tempsearch, timesearch, datesearch, searchwhat
 from alarm import *
 from news import *
+from openings import *
 import tempfile
 import pygame
 import sounddevice as sd

@@ -63,8 +63,8 @@ def datesearch(query):  # Search for the current date
     if "date" in query:
         query = query.replace("what", "").replace("is", "").replace("the", "")
         date = datetime.datetime.now().strftime("%d:%m:%Y")
-
         st.write(date)
+
 
 def searchwhat(query):  # Google search for specific questions
     if any(word in query for word in ["what", "why", "when", "where", "how", "who", "which"]):

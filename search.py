@@ -8,6 +8,8 @@ from gtts import gTTS
 import speech_recognition as sr
 import webbrowser as wb
 import streamlit as st
+import wikipedia
+import pywhatkit as pw
 
 def search(query):  # Google search
     if "google" in query:
@@ -20,11 +22,11 @@ def search(query):  # Google search
         
         st.write("Searching Google for:", query)
         try:
-            # Perform Google search
-            pw.search(query)  # Note: This might not work well with Streamlit as it's meant for a different context
+            # Perform Google search (in a separate context like CLI or browser)
+            pw.search(query)  # Note: This might not work well with Streamlit
             
             # Perform Wikipedia search
-            summary = wk.summary(query, sentences=3)
+            summary = wikipedia.summary(query, sentences=3)
             st.write("Wikipedia Summary:", summary)
         
         except ImportError as e:

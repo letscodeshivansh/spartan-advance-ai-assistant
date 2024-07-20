@@ -47,9 +47,26 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 def get_gemini_response(query):
-   
-    if ".com" in query or ".co" in query or ".org" in query or ".in" in query:
+    if "bye" in query or "close your self" in query or "exit now" in query:
+        speak("Ok, Take Care, Have a good day")
+        exit()
+        return
+    elif "wait" in query:
+        speak("Going to the wait mode, to return back, speak hello")
+        wait()
+    elif ".com" in query or ".co" in query or ".org" in query or ".in" in query:
         openwebapp(query)
+        return
+    elif "open" in query:
+        try:
+            import pyautogui as pg
+            query = query.replace("open", "")
+            pg.press("super")
+            pg.typewrite(query)
+            pg.sleep(2)
+            pg.press("enter")
+        except ImportError:
+            speak("Opening apps is not supported in this environment.")
         return
     elif "google" in query:
         search(query)
@@ -71,7 +88,23 @@ def get_gemini_response(query):
         except ImportError:
             speak("Controlling media is not supported in this environment.")
         return
-
+    # elif "mute video" in query:
+    #     try:
+    #         import pyautogui as pg
+    #         speak("Okay")
+    #         pg.press("n")
+    #     except ImportError:
+    #         speak("Controlling media is not supported in this environment.")
+    #     return
+    # elif "volume" in query:
+    #     if "up" in query or "increase" in query:
+    #         speak("Increasing volume")
+    #         volume_up()
+    #     elif "down" in query or "decrease" in query:
+    #         speak("Decreasing volume")
+    #         volume_down()
+    #     else:
+    #         pass
     elif "wikipedia" in query:
         wikisearch(query)
         return
@@ -92,7 +125,6 @@ def get_gemini_response(query):
     elif "news" in query:
         latest_news = get_news()
         for newslines in latest_news:
-            st.write(newslines)
     else:
         response = model.generate_content(query + "give answer briefly")
         return response.text

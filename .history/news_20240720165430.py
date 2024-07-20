@@ -7,7 +7,6 @@ from bs4 import BeautifulSoup
 from gtts import gTTS
 import speech_recognition as sr
 import webbrowser as wb
-import streamlit as st
 
 def search(query):  # Google search
     if "google" in query:
@@ -18,8 +17,7 @@ def search(query):  # Google search
             result = pw.search(query)
             import wikipedia as wk
             summary = wk.summary(query, sentences=3)
-            st.write(summary)
-
+            st.write("summary")
         except ImportError as e:
             st.write(f"Error importing modules: {e}")
         except Exception as e:
@@ -31,14 +29,16 @@ def youtubesearch(query):  # Search anything on YouTube
         query = query.replace("hey", "").replace("eva", "").replace("can you", "").replace("google", "").replace("search", "").replace("youtube", "").replace("video", "").replace("play", "").replace("on", "")
         web = "https://www.youtube.com/results?search_query=" + query
         wb.open(web)
+        st.write("done")
 
 def wikisearch(query):  # Wikipedia search
     if 'wikipedia' in query:
+        st.write("searching on wikipedia")
         query = query.replace("hey", "").replace("search", "").replace("wikipedia", "").replace("eva", "")
         try:
             import wikipedia as wk
             result = wk.summary(query, sentences=5)
-            st.write(result)
+            st.write("Here is your results")
         except ImportError as e:
             st.write(f"Error importing Wikipedia module: {e}")
         except Exception as e:
@@ -59,19 +59,21 @@ def tempsearch(query):  # Search for the temperature
 def timesearch(query):  # Search for the current time
     if "time" in query:
         query = query.replace("what", "").replace("is", "").replace("the", "")
-        time = datetime.datetime.now().strftime("%H:%M") 
+        time = datetime.datetime.now().strftime("%H:%M")
         st.write(time)
+
 
 def datesearch(query):  # Search for the current date
     if "date" in query:
         query = query.replace("what", "").replace("is", "").replace("the", "")
         date = datetime.datetime.now().strftime("%d:%m:%Y")
-
         st.write(date)
+   
 
 def searchwhat(query):  # Google search for specific questions
     if any(word in query for word in ["what", "why", "when", "where", "how", "who", "which"]):
         query = query.replace("hey", "").replace("eva", "").replace("can you", "").replace("google", "").replace("why", "").replace("what", "").replace("when", "").replace("where", "").replace("how", "").replace("is", "").replace("search", "")
+        st.write("so, I found this")
         try:
             import wikipedia as wk
             result = wk.summary(query, sentences=3)

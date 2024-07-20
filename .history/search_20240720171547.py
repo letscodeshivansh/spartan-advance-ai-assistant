@@ -8,7 +8,6 @@ from gtts import gTTS
 import speech_recognition as sr
 import webbrowser as wb
 import streamlit as st
-
 def search(query):  # Google search
     if "google" in query:
         query = query.replace("hey", "").replace("eva", "").replace("can you", "").replace("google", "").replace("why", "").replace("what", "").replace("when", "").replace("where", "").replace("how", "").replace("search", "")

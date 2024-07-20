@@ -4,7 +4,7 @@ import webbrowser as wb
 from gtts import gTTS
 import pygame
 import tempfile
-import streamlit as st
+
 def openwebapp(query):
     if ".com" in query or ".co" in query or ".org" in query or ".in" in query:
         query = query.replace('open', "").replace(" ", '')

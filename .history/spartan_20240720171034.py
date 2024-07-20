@@ -71,7 +71,23 @@ def get_gemini_response(query):
         except ImportError:
             speak("Controlling media is not supported in this environment.")
         return
-
+    # elif "mute video" in query:
+    #     try:
+    #         import pyautogui as pg
+    #         speak("Okay")
+    #         pg.press("n")
+    #     except ImportError:
+    #         speak("Controlling media is not supported in this environment.")
+    #     return
+    # elif "volume" in query:
+    #     if "up" in query or "increase" in query:
+    #         speak("Increasing volume")
+    #         volume_up()
+    #     elif "down" in query or "decrease" in query:
+    #         speak("Decreasing volume")
+    #         volume_down()
+    #     else:
+    #         pass
     elif "wikipedia" in query:
         wikisearch(query)
         return

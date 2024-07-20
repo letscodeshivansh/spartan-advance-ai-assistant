@@ -7,7 +7,6 @@ from bs4 import BeautifulSoup
 from gtts import gTTS
 import speech_recognition as sr
 import webbrowser as wb
-import streamlit as st
 
 def search(query):  # Google search
     if "google" in query:
@@ -72,6 +71,7 @@ def datesearch(query):  # Search for the current date
 def searchwhat(query):  # Google search for specific questions
     if any(word in query for word in ["what", "why", "when", "where", "how", "who", "which"]):
         query = query.replace("hey", "").replace("eva", "").replace("can you", "").replace("google", "").replace("why", "").replace("what", "").replace("when", "").replace("where", "").replace("how", "").replace("is", "").replace("search", "")
+        speak("so, I found this")
         try:
             import wikipedia as wk
             result = wk.summary(query, sentences=3)
@@ -80,4 +80,4 @@ def searchwhat(query):  # Google search for specific questions
         except ImportError as e:
             st.write(f"Error importing Wikipedia module: {e}")
         except Exception as e:
-            st.write(f"An error occurred: {e}")
+            print(f"An error occurred: {e}")

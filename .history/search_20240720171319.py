@@ -7,7 +7,6 @@ from bs4 import BeautifulSoup
 from gtts import gTTS
 import speech_recognition as sr
 import webbrowser as wb
-import streamlit as st
 
 def search(query):  # Google search
     if "google" in query:

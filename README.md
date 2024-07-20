@@ -64,9 +64,9 @@ Before running the project locally, ensure you have the following installed:
 Once the application is running, either locally or online, you can interact with Spartan via the Streamlit web interface. Enter your Google API key and start asking questions or giving commands. Some of the commands you can try include:
 
 - "What is the weather like today?"
-- "Set an alarm for 7 AM."
-- "Open Google.com."
-- "Play some music."
+- "Alarm"
+- "General facts"
+- "Identify the error in your code."
 - "Tell me the latest news."
 
 ## Contribution

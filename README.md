@@ -14,11 +14,11 @@ Welcome to the Spartan Virtual Voice Assistant project! Spartan is an AI-powered
 
 ## Difference Between Chat-GPT or Gemini and Spartan  🗽
 
-- Give Latest News where **chat gpt can't**
-- Provide alarm setting function where **chat gpt can't**
-- Provide Weather Updated where **chat gpt can't**
-- Web Search Integration where **chat gpt can't**
-- Can directly open any desired site where **chat gpt can't** 
+- Give Latest News where **Chat-GPT can't**
+- Provide alarm setting function where **Chat-GPT can't**
+- Provide Weather Updated where **Chat-GPT can't**
+- Web Search Integration where **Chat-GPT can't**
+- Can directly open any desired site where **Chat-GPT can't** 
 
 ### (Note: Some of the feature may not be working efficiently, but I'm working on it)
 

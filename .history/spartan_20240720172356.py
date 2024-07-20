@@ -14,6 +14,35 @@ import pygame
 import sounddevice as sd
 load_dotenv()
 
+# from openings import *
+# from volume_settings import *
+
+# # Initialize pygame mixer for audio playback
+# pygame.mixer.init()
+
+# def speak(audio, lang='en'):
+#     if audio:
+#         tts = gTTS(text=audio, lang=lang, slow=False)
+#         with tempfile.NamedTemporaryFile(delete=True) as fp:
+#             tts.save(fp.name + ".mp3")
+#             pygame.mixer.music.load(fp.name + ".mp3")
+#             pygame.mixer.music.play()
+#             while pygame.mixer.music.get_busy():
+#                 continue
+
+# def takecommand():
+#     speech = sr.Recognizer()
+#     with sr.Microphone() as source:
+#         speech.pause_threshold = 2
+#         speech.energy_threshold = 250
+#         audio = speech.listen(source, 0, 5)
+#         try:
+#             query = speech.recognize_google(audio, language='en-in')
+#             return query.lower()
+#         except Exception:
+#             speak("Speak Again!")
+#             return None
+
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 model = genai.GenerativeModel("gemini-1.5-flash")
 
@@ -95,11 +124,7 @@ if api_key:
         st.subheader("Here's Your Answer:")
         if response:
             st.write(response)
-            if response == "news":
-                latest_news = get_news()  # Fetch news
-                for newslines in latest_news:
-                    st.write(newslines)
-            elif isinstance(response, str):
+            if isinstance(response, str):
                 st.session_state['chat_history'].append(("Bot: ", response))
             else:
                 for chunk in response:

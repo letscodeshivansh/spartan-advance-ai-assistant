@@ -20,7 +20,7 @@ Welcome to the Spartan Virtual Voice Assistant project! Spartan is an AI-powered
 - Web Search Integration where **Chat-GPT can't**
 - Can directly open any desired site where **Chat-GPT can't** 
 
-### (Note: Some of the feature may not be working efficiently, but I'm working on it)
+### (Note: Some of the feature might not be working efficiently, but I'm working on it)
 
 ## Prerequisites 🗒️
 
@@ -34,7 +34,7 @@ Before running the project locally, ensure you have the following installed:
 1. **Clone the Repository:**
 
    ```sh
-   git clone https://github.com/your-username/spartan-virtual-voice-assistant.git
+   git clone https://github.com/letscodeshivansh/spartan-advance-ai-assistant.git
    cd spartan-virtual-voice-assistant
 
 2. Create a Virtual Env (recommended):

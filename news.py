@@ -8,8 +8,8 @@ from gtts import gTTS
 import speech_recognition as sr
 import webbrowser as wb
 
-# Initialize pygame mixer for audio playback
-pygame.mixer.init()
+# # Initialize pygame mixer for audio playback
+# pygame.mixer.init()
 
 def speak(audio):
     tts = gTTS(text=audio, lang='en')

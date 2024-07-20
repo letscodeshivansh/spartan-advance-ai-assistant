@@ -37,6 +37,7 @@ def wikisearch(query):  # Wikipedia search
         try:
             import wikipedia as wk
             result = wk.summary(query, sentences=5)
+            st.write(result)
         except ImportError as e:
             st.write(f"Error importing Wikipedia module: {e}")
         except Exception as e:

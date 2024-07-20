@@ -26,10 +26,9 @@ def search(query):  # Google search
             st.write(f"An error occurred: {e}")
 
 def youtubesearch(query):  # Search anything on YouTube
-    if "youtube" in query:
-        query = query.replace("hey", "").replace("eva", "").replace("can you", "").replace("google", "").replace("search", "").replace("youtube", "").replace("video", "").replace("play", "").replace("on", "")
-        web = "https://www.youtube.com/results?search_query=" + query
-        wb.open(web)
+    query = query.replace("hey", "").replace("eva", "").replace("can you", "").replace("google", "").replace("search", "").replace("youtube", "").replace("video", "").replace("play", "").replace("on", "")
+    web = "https://www.youtube.com/results?search_query=" + query
+    wb.open(web)
 
 def wikisearch(query):  # Wikipedia search
     if 'wikipedia' in query:

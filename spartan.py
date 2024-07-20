@@ -7,14 +7,14 @@ import speech_recognition as sr
 import webbrowser as wb
 import threading
 from search import *
-# from openings import *
 from alarm import *
-from volume_settings import *
 from news import *
 import tempfile
 import pygame
 import sounddevice as sd
 
+# from openings import *
+# from volume_settings import *
 load_dotenv()
 
 # Initialize pygame mixer for audio playback
@@ -88,23 +88,23 @@ def get_gemini_response(query):
         except ImportError:
             speak("Controlling media is not supported in this environment.")
         return
-    elif "mute video" in query:
-        try:
-            import pyautogui as pg
-            speak("Okay")
-            pg.press("n")
-        except ImportError:
-            speak("Controlling media is not supported in this environment.")
-        return
-    elif "volume" in query:
-        if "up" in query or "increase" in query:
-            speak("Increasing volume")
-            volume_up()
-        elif "down" in query or "decrease" in query:
-            speak("Decreasing volume")
-            volume_down()
-        else:
-            pass
+    # elif "mute video" in query:
+    #     try:
+    #         import pyautogui as pg
+    #         speak("Okay")
+    #         pg.press("n")
+    #     except ImportError:
+    #         speak("Controlling media is not supported in this environment.")
+    #     return
+    # elif "volume" in query:
+    #     if "up" in query or "increase" in query:
+    #         speak("Increasing volume")
+    #         volume_up()
+    #     elif "down" in query or "decrease" in query:
+    #         speak("Decreasing volume")
+    #         volume_down()
+    #     else:
+    #         pass
     elif "wikipedia" in query:
         wikisearch(query)
         return

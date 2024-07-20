@@ -26,4 +26,4 @@ def openwebapp(query):
 def closewebapp(query):
     if "one tab" in query or "1 tab" in query or "tab" in query:
         speak('closing the tab')
-        pg.hotkey("ctrl", "w")  # to close any tab, we can type ctrl+w, this will close the tab
+        # pg.hotkey("ctrl", "w")  # to close any tab, we can type ctrl+w, this will close the tab

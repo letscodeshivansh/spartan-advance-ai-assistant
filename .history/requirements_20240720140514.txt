@@ -14,5 +14,3 @@ pywhatkit
 requests
 wikipedia
 python-dotenv
-sounddevice 
-soundfile 

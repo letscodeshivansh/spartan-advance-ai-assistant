@@ -1,12 +1,13 @@
-import os
-import tempfile
-import datetime
-import requests
-import pygame
-from bs4 import BeautifulSoup
+import pywhatkit as pw
+import wikipedia as wk
 from gtts import gTTS
 import speech_recognition as sr
 import webbrowser as wb
+from bs4 import BeautifulSoup
+import requests
+import datetime
+import pygame
+import tempfile
 import sounddevice as sd
 # Initialize pygame mixer for audio playback
 pygame.mixer.init()
@@ -20,23 +21,19 @@ def speak(audio):
         while pygame.mixer.music.get_busy():
             continue
 
-def search(query):  # Google search
+def search(query):  # google search
     if "google" in query:
         query = query.replace("hey", "").replace("eva", "").replace("can you", "").replace("google", "").replace("why", "").replace("what", "").replace("when", "").replace("where", "").replace("how", "").replace("search", "")
         speak("so, I found this")
         try:
-            import pywhatkit as pw
-            result = pw.search(query)
-            import wikipedia as wk
-            summary = wk.summary(query, sentences=3)
-            speak(summary)
-            print(summary)
-        except ImportError as e:
-            print(f"Error importing modules: {e}")
-        except Exception as e:
-            print(f"An error occurred: {e}")
+            pw.search(query)
+            result = wk.summary(query, sentences=3)
+            speak(result)
+            print(result)
+        except:
+            print("")
 
-def youtubesearch(query):  # Search anything on YouTube
+def youtubesearch(query):  # to search anything on youtube
     if "youtube" in query:
         speak("searching on youtube")
         query = query.replace("hey", "").replace("eva", "").replace("can you", "").replace("google", "").replace("search", "").replace("youtube", "").replace("video", "").replace("play", "").replace("on", "")
@@ -44,60 +41,50 @@ def youtubesearch(query):  # Search anything on YouTube
         wb.open(web)
         speak("done")
 
-def wikisearch(query):  # Wikipedia search
+def wikisearch(query):  # wikipedia
     if 'wikipedia' in query:
         speak("searching on wikipedia")
         query = query.replace("hey", "").replace("search", "").replace("wikipedia", "").replace("eva", "")
         try:
-            import wikipedia as wk
             result = wk.summary(query, sentences=5)
             speak("results on wikipedia are...")
             print(result)
             speak(result)
-        except ImportError as e:
-            print(f"Error importing Wikipedia module: {e}")
-        except Exception as e:
-            print("No page found on Wikipedia")
-            speak("No page found on Wikipedia")
+        except:
+            print("No page found on wikipedia")
+            speak("No page found on wikipedia")
 
-def tempsearch(query):  # Search for the temperature
+def tempsearch(query):  # searching for the temperature
     if "temperature" in query or "weather" in query:
         query = query.replace("what", "").replace("is", "")
         link = "https://www.google.com/search?q=" + query
         result = requests.get(link)
         data = BeautifulSoup(result.text, "html.parser")
-        try:
-            temp = data.find("div", class_="BNeawe").text
-            speak(query)
-            speak(temp)
-        except AttributeError:
-            speak("Could not retrieve temperature information.")
-            print("Could not retrieve temperature information.")
+        temp = data.find("div", class_="BNeawe").text
+        speak(query)
+        speak(temp)
 
-def timesearch(query):  # Search for the current time
+def timesearch(query):  # searching for the current time
     if "time" in query:
         query = query.replace("what", "").replace("is", "").replace("the", "")
         time = datetime.datetime.now().strftime("%H:%M")
         speak(time)
         print(time)
 
-def datesearch(query):  # Search for the current date
+def datesearch(query):  # searching for the current date
     if "date" in query:
         query = query.replace("what", "").replace("is", "").replace("the", "")
         date = datetime.datetime.now().strftime("%d:%m:%Y")
         speak(date)
         print(date)
 
-def searchwhat(query):  # Google search for specific questions
+def searchwhat(query):  # google search
     if any(word in query for word in ["what", "why", "when", "where", "how", "who", "which"]):
         query = query.replace("hey", "").replace("eva", "").replace("can you", "").replace("google", "").replace("why", "").replace("what", "").replace("when", "").replace("where", "").replace("how", "").replace("is", "").replace("search", "")
         speak("so, I found this")
         try:
-            import wikipedia as wk
             result = wk.summary(query, sentences=3)
             print(result)
             speak(result)
-        except ImportError as e:
-            print(f"Error importing Wikipedia module: {e}")
-        except Exception as e:
-            print(f"An error occurred: {e}")
+        except:
+            print("")

@@ -14,5 +14,6 @@ pywhatkit
 requests
 wikipedia
 python-dotenv
+playsound
 sounddevice 
 soundfile 

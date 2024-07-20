@@ -15,6 +15,8 @@ Welcome to the Spartan Virtual Voice Assistant project! Spartan is an AI-powered
 - **News Reading:** Get the latest news updates.
 - **Weather Updates:** Retrieve current weather information.
 
+### (Note: Some of the feature may not be working efficiently, but I'm working on it)
+
 ## Prerequisites 🗒️
 
 Before running the project locally, ensure you have the following installed:

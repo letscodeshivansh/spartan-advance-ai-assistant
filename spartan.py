@@ -87,11 +87,11 @@ if api_key:
     chat = model.start_chat(history=[])
     if 'chat_history' not in st.session_state:
         st.session_state['chat_history'] = []
-    text_query = st.text_input("Enter Your Query:")
+    query = st.text_input("Enter Your Query:")
     submit = st.button("Ask")
-    if submit and text_query:
-        response = get_gemini_response(text_query)
-        st.session_state['chat_history'].append(("You: ", text_query))
+    if submit and query:
+        response = get_gemini_response(query)
+        st.session_state['chat_history'].append(("You: ", query))
         st.subheader("Here's Your Answer:")
         if response:
             st.write(response)

@@ -1,16 +1,34 @@
-## "Spartan: Where Help Meets Strength!"
+## "Spartan: Where Help Meets Strength!" ⚔️
 <img src="https://github.com/user-attachments/assets/dddfdfb2-73a7-4a70-a660-64380f880018" alt="file" width="180"/>
 
+# Spartan Virtual Voice Assistant: [Here](https://spartan-assistant.streamlit.app/)
 
-## Installation 🦿
+Welcome to the Spartan Virtual Voice Assistant project! Spartan is an AI-powered virtual assistant designed to help you with a wide range of tasks through voice commands. It leverages modern technologies such as Google Generative AI, Google Text-to-Speech, and Streamlit to provide a seamless user experience.
 
-To install this Project, follow these steps:
+## Features ✒️
 
-1. Clone the repository:
+- **Voice Command Recognition:** Utilize speech recognition to interact with Spartan.
+- **Text-to-Speech:** Spartan can respond to your queries with synthesized speech.
+- **Web Search Integration:** Perform web searches and open web pages with voice commands.
+- **Application Control:** Open applications, control media playback, and adjust system volume.
+- **Alarm Setting:** Set alarms with a simple voice command.
+- **News Reading:** Get the latest news updates.
+- **Weather Updates:** Retrieve current weather information.
 
-    ```bash
-    git clone https://github.com/letscodeshivansh/spartan-virtual-voice-assistant.git
-    ```
+## Prerequisites 🗒️
+
+Before running the project locally, ensure you have the following installed:
+
+- Python 3.11 or higher
+- Virtual environment (optional but recommended)
+
+## Installation 💻
+
+1. **Clone the Repository:**
+
+   ```sh
+   git clone https://github.com/your-username/spartan-virtual-voice-assistant.git
+   cd spartan-virtual-voice-assistant
 
 2. Create a Virtual Env (recommended):
 
@@ -25,10 +43,43 @@ To install this Project, follow these steps:
     pip install -r requirements.txt
     ```
 
-4. Start the assistant:
+4. Set Up Environment Variables:
+   
+    ```bash
+    GOOGLE_API_KEY=your_google_api_key_here
+    ```
+    
+5. Start the project:
 
     ```bash
     streamlit run spartan.py 
     ```
 
- 4. Now, just "Hi" your spartan.
+6. Now, just "Hi" your spartan.
+
+## Usage 🖱️
+
+Once the application is running, either locally or online, you can interact with Spartan via the Streamlit web interface. Enter your Google API key and start asking questions or giving commands. Some of the commands you can try include:
+
+- "What is the weather like today?"
+- "Set an alarm for 7 AM."
+- "Open Google.com."
+- "Play some music."
+- "Tell me the latest news."
+
+## Contribution
+
+Contributions are welcome! If you find a bug or have a feature request, please open an issue. Feel free to fork the repository and submit a pull request.
+
+## Deployement 📱
+
+The Spartan Virtual Voice Assistant is also deployed online using Streamlit Cloud. You can try it out at:
+[Click Here](https://spartan-assistant.streamlit.app/)
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+
+
+

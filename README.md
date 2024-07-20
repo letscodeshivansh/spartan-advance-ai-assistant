@@ -7,13 +7,18 @@ Welcome to the Spartan Virtual Voice Assistant project! Spartan is an AI-powered
 
 ## Features ✒️
 
-- **Voice Command Recognition:** Utilize speech recognition to interact with Spartan.
-- **Text-to-Speech:** Spartan can respond to your queries with synthesized speech.
 - **Web Search Integration:** Perform web searches and open web pages with voice commands.
-- **Application Control:** Open applications, control media playback, and adjust system volume.
 - **Alarm Setting:** Set alarms with a simple voice command.
-- **News Reading:** Get the latest news updates.
+- **News Reading:** Get the latest news updates
 - **Weather Updates:** Retrieve current weather information.
+
+## Difference Between Chat-GPT or Gemini and Spartan  🗽
+
+- Give Latest News where **Chat-GPT can't**
+- Provide alarm setting function where **Chat-GPT can't**
+- Provide Weather Updated where **Chat-GPT can't**
+- Web Search Integration where **Chat-GPT can't**
+- Can directly open any desired site where **Chat-GPT can't** 
 
 ### (Note: Some of the feature may not be working efficiently, but I'm working on it)
 

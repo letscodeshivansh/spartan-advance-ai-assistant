@@ -6,7 +6,7 @@ from gtts import gTTS
 import speech_recognition as sr
 import webbrowser as wb
 import threading
-from search import *
+from search import search, youtubesearch, wikisearch, tempsearch, timesearch, datesearch, searchwhat
 from alarm import *
 from news import *
 import tempfile
@@ -99,6 +99,7 @@ if api_key:
                 latest_news = get_news()  # Fetch news
                 for newslines in latest_news:
                     st.write(newslines)
+                   
             elif isinstance(response, str):
                 st.session_state['chat_history'].append(("Bot: ", response))
             else:
@@ -115,3 +116,4 @@ else:
 
 if __name__ == "__main__":
     st.write("Get Ready to Conquer Your Questions with Spartan!")
+    

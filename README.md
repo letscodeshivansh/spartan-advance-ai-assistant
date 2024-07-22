@@ -5,13 +5,6 @@
 
 Welcome to the Spartan Virtual Voice Assistant project! Spartan is an AI-powered virtual assistant designed to help you with a wide range of tasks through voice commands. It leverages modern technologies such as Google Generative AI, Google Text-to-Speech, and Streamlit to provide a seamless user experience.
 
-## Features ✒️
-
-- **Web Search Integration:** Perform web searches and open web pages with voice commands.
-- **Alarm Setting:** Set alarms with a simple voice command.
-- **News Reading:** Get the latest news updates
-- **Weather Updates:** Retrieve current weather information.
-
 ## Difference Between Chat-GPT or Gemini and Spartan  🗽
 
 - Give Latest News where **Chat-GPT can't**

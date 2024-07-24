@@ -1,9 +1,9 @@
 ## "Spartan: Where Help Meets Strength!" ⚔️
 <img src="https://github.com/user-attachments/assets/dddfdfb2-73a7-4a70-a660-64380f880018" alt="file" width="180"/>
 
-# Spartan Virtual Voice Assistant: [Click Here](https://spartan-assistant.streamlit.app/)
+# [Spartan Advance AI Assistant:](https://spartan-assistant.streamlit.app/) 
 
-Welcome to the Spartan Virtual Voice Assistant project! Spartan is an AI-powered virtual assistant designed to help you with a wide range of tasks through voice commands. It leverages modern technologies such as Google Generative AI, Google Text-to-Speech, and Streamlit to provide a seamless user experience.
+Welcome to the Spartan! Spartan is an AI-powered virtual assistant designed to help you with a wide range of tasks through commands. It leverages modern technologies such as Google Generative AI, Google Text-to-Speech, and Streamlit to provide a seamless user experience.
 
 ## Difference Between Chat-GPT or Gemini and Spartan  🗽
 

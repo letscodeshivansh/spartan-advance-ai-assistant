@@ -19,6 +19,7 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 def get_gemini_response(query):
+   
     if ".com" in query or ".co" in query or ".org" in query or ".in" in query:
         openwebapp(query)
         return
@@ -42,6 +43,7 @@ def get_gemini_response(query):
         except ImportError:
             speak("Controlling media is not supported in this environment.")
         return
+
     elif "wikipedia" in query:
         wikisearch(query)
         return
@@ -72,15 +74,9 @@ st.header("Meet Spartan: Your Ultimate Assistant!")
 image_path = 'assets/spartan3.png'
 st.image(image_path, caption='Mighty Assistance, Spartan Style', width=250)
 
-
+# Ask for personal API key
 api_key = st.text_input("Enter your personal API key:")
 submit_api = st.button("Submit Key")
-
-# Add source for API key
-st.markdown("""
-**Don't have an API key?**
-Get your Google Gemini API key from [Google AI Studio](https://aistudio.google.com/app/apikey).
-""")
 
 if submit_api and not api_key:
     st.warning("Please enter your personal API key to proceed.")
@@ -121,3 +117,4 @@ else:
 
 if __name__ == "__main__":
     st.write("Get Ready to Conquer Your Questions with Spartan!")
+    

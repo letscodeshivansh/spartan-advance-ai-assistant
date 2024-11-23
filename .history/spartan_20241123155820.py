@@ -73,9 +73,9 @@ image_path = 'assets/spartan3.png'
 st.image(image_path, caption='Mighty Assistance, Spartan Style', width=250)
 
 
+# Ask for personal API key
 api_key = st.text_input("Enter your personal API key:")
 submit_api = st.button("Submit Key")
-
 # Add source for API key
 st.markdown("""
 **Don't have an API key?**
